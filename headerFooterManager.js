@@ -104,7 +104,13 @@ class SpecialFooter extends HTMLElement {
 <div class="footer-icons">
     <a href="http://wa.me/+27615196357"><i class="fa fa-whatsapp"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="https://linkedin.com/Kuda mhurure/url"><i class="fa fa-linkedin"></i></a>
+    <!-- LinkedIn Profile Badge Script -->
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+<!-- LinkedIn Icon with Link -->
+<a href="https://www.linkedin.com/in/kuda-mhurure-681a6b53" target="_blank">
+  <i class="fa fa-linkedin"></i>
+</a>
     <a href="#"><i class="fa fa-youtube"></i></a>
     <a href="https://www.facebook.com/groups/468275692499194/" target="_blank"><i class="fa fa-facebook"></i></a>
 </div>
