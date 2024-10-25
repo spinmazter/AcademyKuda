@@ -106,7 +106,7 @@ class SpecialFooter extends HTMLElement {
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="https://linkedin.com/Kuda mhurure/url"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-youtube"></i></a>
-    <a href="https://www.facebook.com/groups/Spinmasterz Academy"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.facebook.com/groups/468275692499194/" target="_blank"><i class="fa fa-facebook"></i></a>
 </div>
 </div>
 
