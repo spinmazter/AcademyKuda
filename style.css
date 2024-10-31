@@ -14,13 +14,17 @@
     margin: 0;
     padding: 0;
   }
-  body {
-    font-family: "josefin sans", "helvetica", sans-serif;
-    font-size: 1rem;
+  body.home {
     background-image: url(./img/1b.jpg);
     background-size: 100% 100vh;
-      background-repeat: no-repeat;  
+    background-repeat: no-repeat;
   }
+  
+  /* Remove the background image for all other pages */
+  body:not(.home) {
+    background-image: none;
+  }
+  
   
   
   header {
@@ -618,40 +622,90 @@ transform: scale(1.1);
 
 
 /* Style for Gallery Section */
-.gallery-section {
-  background-color: #f4f4f4; /* Light grey background for gallery */
-  padding: 50px 0;
-}
-/* Style for the "More photos" button */
-.botn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #ff5722; /* Button background color */
-  color: white; /* Button text color */
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, transform 0.3s ease;
+/* Container styling */
+.Picontainer {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between; /* Distribute elements vertically */
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
 }
 
-/* Hover effect for the button */
-.botn:hover {
-  background-color: #e64a19; /* Darker shade on hover */
-  transform: translateY(-2px); /* Slight lift on hover */
+/* Heading styling at the Top */
+h1 {
+	font-size: 2em;
+	color: cyan;
+	margin: 0;
 }
 
-/* Active state (when the button is clicked) */
-.botn:active {
-  transform: translateY(1px); /* Slight press down effect */
+/* 3D Slider */
+.slider {
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	animation: rotate 23s linear infinite;
 }
 
-/* Focus state (when the button is focused via keyboard) */
-.botn:focus {
-  outline: 2px solid #ffccbc; /* Outline for keyboard navigation */
-  outline-offset: 2px;
+@keyframes rotate {
+	from {
+		transform: perspective(1000px) rotateY(0deg);
+	}
+	to {
+		transform: perspective(1000px) rotateY(360deg);
+	}
 }
 
+.slider div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	border-radius: 15px;
+	transform: rotateY(calc(30deg * var(--n))) translateZ(390px);
+	-webkit-box-reflect: below 0px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.250));
+}
+
+.slider div img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.slider div:hover > img {
+	cursor: pointer;
+	transform: scale(1.1);
+	border: 2px solid cyan;
+}
+
+/* More Pictures Button at the Bottom */
+.more-pictures {
+	background-color: cyan;
+	color: black;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.more-pictures:hover {
+	background-color: darkcyan;
+}
+
+/* End Style for Gallery Section */
 
 /* About Section */
 
