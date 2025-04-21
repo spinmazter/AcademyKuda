@@ -55,7 +55,7 @@
     text-decoration: none;
     color: var(--light);
     padding: 1em 1.5em;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   /* Styling submenu */
@@ -377,48 +377,100 @@
   /* End Footer */
 
 
-  /* hero section */
-  
-  .hero-section {
-    padding: 0px 50px; /* Further reduced padding for left alignment */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns content towards the left */
-    padding-bottom: 50px;
-    
+ /* hero section */
+
+.hero-section {
+  padding: 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 50px;
 }
-  .hero-section h1{
-    font-family:"Lemon-Regular";
-    font-weight: 400;
-    font-size: 64px;
-    width: 400px;
-    text-transform: capitalize;
-    color: #fff;
+
+.hero-section h1 {
+  font-family: "Lemon-Regular";
+  font-weight: 400;
+  font-size: 64px;
+  width: 400px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.hero-section h1 span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.5s forwards;
+}
+
+.hero-section h1 span:nth-child(1)  { animation-delay: 0s; }
+.hero-section h1 span:nth-child(2)  { animation-delay: 0.2s; }
+hero-section h1 span:nth-child(3)  { animation-delay: 0.4s; }
+.hero-section h1 span:nth-child(4)  { animation-delay: 0.6s; }
+.hero-section h1 span:nth-child(5)  { animation-delay: 0.8s; }
+.hero-section h1 span:nth-child(6)  { animation-delay: 1s; }
+.hero-section h1 span:nth-child(7)  { animation-delay: 1.2s; }
+.hero-section h1 span:nth-child(8)  { animation-delay: 1.4s; }
+/* <br> doesn't count as a span */
+.hero-section h1 span:nth-child(9)  { animation-delay: 1.6s; }
+.hero-section h1 span:nth-child(10) { animation-delay: 1.8s; }
+.hero-section h1 span:nth-child(11) { animation-delay: 2s; }
+.hero-section h1 span:nth-child(12) { animation-delay: 2.2s; }
+.hero-section h1 span:nth-child(13) { animation-delay: 2.4s; }
+.hero-section h1 span:nth-child(14) { animation-delay: 2.6s; }
+.hero-section h1 span:nth-child(15) { animation-delay: 2.8s; }
+.hero-section h1 span:nth-child(16) { animation-delay: 3s; }
+.hero-section h1 span:nth-child(17) { animation-delay: 3.2s; }
+.hero-section h1 span:nth-child(18) { animation-delay: 3.4s; }
+.hero-section h1 span:nth-child(19) { animation-delay: 3.6s; }
+.hero-section h1 span:nth-child(20) { animation-delay: 3.8s; }
+.hero-section h1 span:nth-child(21) { animation-delay: 4s; }
+.hero-section h1 span:nth-child(22) { animation-delay: 4.2s; }
+.hero-section h1 span:nth-child(23) { animation-delay: 4.4s; }
+.hero-section h1 span:nth-child(24) { animation-delay: 4.6s; }
+.hero-section h1 span:nth-child(25) { animation-delay: 4.8s; }
+.hero-section h1 span:nth-child(26) { animation-delay: 5s; }
+.hero-section h1 span:nth-child(27) { animation-delay: 5.2s; }
+.hero-section h1 span:nth-child(28) { animation-delay: 5.4s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  span{
-    color: #ef5e41;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .hero-section p{
-    font-family:"OpenSans-Regular";
-    font-weight: 400;
-    font-size: 18px;
-    width: 309px;
-    padding: 30px 0px;
-    color: #f3e5ab;
-  }
-  .hero-section button{
-    font-family:"OpenSans-Bold";
-    font-weight: 700;
-    font-size: 15px;
-    color: #fff;
-    width: 135px;
-    height: 65px;
-    border-radius: 50px 0px 50px 0px;
-    background-color: #ef5e41;
-    cursor: pointer;
-    border: none;
-  }
-  /*end hero section */
+}
+
+.highlight {
+  color: #ef5e41;
+}
+
+.hero-section p {
+  font-family: "OpenSans-Regular";
+  font-weight: 400;
+  font-size: 24px;
+  width: 309px;
+  padding: 30px 0px;
+  color: hsl(60, 23%, 97%);
+}
+
+.hero-section button {
+  font-family: "OpenSans-Bold";
+  font-weight: 700;
+  font-size: 23px;
+  color: #fff;
+  width: 135px;
+  height: 65px;
+  border-radius: 50px 0px 50px 0px;
+  background-color: #ef5e41;
+  cursor: pointer;
+  border: none;
+}
+
+/* end hero section */
+
   
   
 
@@ -474,7 +526,7 @@
 }
 
 .content-welcome p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -505,7 +557,7 @@
 .Pcontainer .heading{
   text-align: center;
   padding: 15px;
-  color: white;
+  color: rgb(199, 15, 15);
   text-shadow: 0 5px 10px rgb(0,0,0,.2);
   font-size: 50px;
 }
@@ -536,14 +588,14 @@
   padding: 10px 0;
 }
 .Pcontainer .box-container .box p{
-  color: #777;
-  font-size: 15px;
+  color: #a13434;
+  font-size: 18px;
   line-height: 1.8;
 }
 .Pcontainer .box-container .box .btn{
   margin-top: 10px;
   display: inline-block;
-  background: #333;
+  background: #d32323;
   color: #fff;
   font-size: 17px; 
   border-radius: 5px;
@@ -613,7 +665,7 @@ transform: scale(1.1);
 }
 
 .content-Philosophy p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -644,7 +696,7 @@ transform: scale(1.1);
 /* Heading styling at the Top */
 h1 {
 	font-size: 2em;
-	color: cyan;
+	color: rgb(221, 49, 72);
 	margin: 0;
 }
 
@@ -691,12 +743,12 @@ h1 {
 .slider div:hover > img {
 	cursor: pointer;
 	transform: scale(1.1);
-	border: 2px solid cyan;
+	border: 2px solid rgb(238, 74, 74);
 }
 
 /* More Pictures Button at the Bottom */
 .more-pictures {
-	background-color: cyan;
+	background-color: rgb(245, 94, 102);
 	color: black;
 	padding: 10px 20px;
 	border: none;
@@ -741,7 +793,7 @@ h1 {
 }
 .headings h1{
   font-size: 50px;
-  color: #000;
+  color: #bd2a2a;
   margin-bottom: 25px;   
   position: relative;
 }
@@ -751,11 +803,11 @@ h1 {
   width: 100%;
   height: 4px;
   display: block;
-  margin: 0 auto;background-color: #4caf50;
+  margin: 0 auto;background-color: #414641;
 }
 .headings p{
   font-size: 18px;
-  color: #666;
+  color: #534d4d;
   margin-bottom: 35px;
 }
 .Acontainer{
@@ -788,14 +840,14 @@ h1 {
   flex: 1;
 }
 .about-content h2{
-  font-size: 23px;
+  font-size: 26px;
   margin-bottom: 15px;
-  color: #333;
+  color: #da3434;
 }
 .about-content p{
   font-size: 18px;
   line-height: 1.5;
-  color: #666;
+  color: #2e2a2a;
 }
 .about-content .read-more{
   display: inline-block;

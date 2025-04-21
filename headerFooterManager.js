@@ -89,7 +89,7 @@ class SpecialFooter extends HTMLElement {
     </div>
     <div>
         <i class="fa fa-phone"></i>
-        <p>+27 81 349 4025</p>
+        <p>+27 69 748 0306</p>
     </div>
     <div>
         <i class="fa fa-envelope"></i>
@@ -102,7 +102,7 @@ class SpecialFooter extends HTMLElement {
     <strong>SpinMasterz Academy</strong> Where players develop into Champions
 </p>
 <div class="footer-icons">
-    <a href="http://wa.me/+27615196357"><i class="fa fa-whatsapp"></i></a>
+    <a href="http://wa.me/+27697480306"><i class="fa fa-whatsapp"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <!-- LinkedIn Profile Badge Script -->
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
