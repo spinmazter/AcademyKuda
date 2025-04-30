@@ -1,0 +1,118 @@
+.gallery-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.gallery-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.gallery-item-details {
+    color: #333;
+}
+
+.gallery-item-details h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.gallery-item-details p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0;
+}
+
+.gallery-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.gallery-prev, 
+.gallery-next {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.gallery-prev:hover, 
+.gallery-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-details {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: #f4f4f4;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        padding: 1rem;
+    }
+    
+    .gallery-controls {
+        display: none;  /* Optional: hide controls on mobile */
+    }
+}

@@ -16,9 +16,10 @@
 }
 
 body.home {
-  background-image: url(./img/1b.jpg);
+  /* background-image: url(./img/1b.jpg); */ /* Commented out or delete this line */
   background-size: 100% 100vh;
   background-repeat: no-repeat;
+  /* Keep other styles if needed, or remove them if they are no longer relevant */
 }
 
 /* Remove the background image for all other pages */
@@ -127,13 +128,17 @@ header {
 .arrow {
   width: 0.5em;
   height: 0.5em;
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   border-left: 0.15em solid currentColor;
   border-bottom: 0.15em solid currentColor;
   transform: rotate(-45deg);
   margin-top: -0.25em;
   transition: transform 100ms ease-in-out;
+}
+
+.has-dropdown > a:hover .arrow {
+  display: inline-block;
 }
 
 /* Reveal */
@@ -205,7 +210,7 @@ header {
   .menu {
     flex-flow: column;
     position: absolute;
-    background: var(--light);
+    background: var(--header-bg);
     top: 100%;
     left: 0;
     right: 0;
@@ -219,21 +224,38 @@ header {
     z-index: 100;
   }
   
-  .menu > li > a {
-    font-size: 1rem;
-    color: var(--dark);
-  }
-  
-  .submenu > li > a {
-    font-size: 1rem;
+  .menu > li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 
+  .menu > li > a {
+    font-size: 1.2rem;
+    color: var(--light);
+    padding: 1em 1.5em;
+  }
+  
   .submenu {
-    position: relative;
-    top: 0;
-    padding-left: 1.5em;
-    border-left: 0.12em dotted hsla(342, 99%, 45%, 0.95);
-    background: transparent;
+    position: static;
+    background: rgba(0,0,0,0.1);
+    opacity: 1;
+    transform: scaleY(1);
+    display: none;
+  }
+
+  .menu > li:hover .submenu,
+  .menu > li:focus-within .submenu {
+    display: block;
+  }
+
+  .submenu > li > a {
+    font-size: 1rem;
+    color: var(--light);
+    padding: 0.8em 2.5em;
+  }
+
+  .arrow {
+    display: inline-block;
+    margin-left: 10px;
   }
   
   .submenu .submenu {
@@ -280,7 +302,7 @@ main {
 .footer-distributed{
   background-color: #2d2a30;
   box-sizing: border-box;
-  windows: 100%;
+  width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
@@ -427,21 +449,56 @@ main {
 
  /* hero section */
 
-.hero-section {
-  padding: 0px 50px;
+ .hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/1b.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-bottom: 50px;
+  justify-content: center;
+  margin-top: -80px; /* Remove gap with navbar */
+  padding-top: 80px; /* Compensate for navbar height */
+}
+
+.hero-section .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  max-width: 600px;
+  width: 80%;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: white;
+  animation: flash 1.5s infinite;
+}
+
+@keyframes flash {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.5; }
 }
 
 .hero-section h1 {
-  font-family: "Lemon-Regular";
-  font-weight: 400;
-  font-size: 64px;
-  width: 400px;
-  text-transform: capitalize;
-  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-section h1 .highlight {
+  color: #ef5e41;
 }
 
 .hero-section h1 span {
@@ -496,25 +553,24 @@ hero-section h1 span:nth-child(3)  { animation-delay: 0.4s; }
 }
 
 .hero-section p {
-  font-family: "OpenSans-Regular";
-  font-weight: 400;
-  font-size: 24px;
-  width: 309px;
-  padding: 30px 0px;
-  color: hsl(60, 23%, 97%);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #f0f0f0;
 }
 
 .hero-section button {
-  font-family: "OpenSans-Bold";
-  font-weight: 700;
-  font-size: 23px;
-  color: #fff;
-  width: 135px;
-  height: 65px;
-  border-radius: 50px 0px 50px 0px;
   background-color: #ef5e41;
-  cursor: pointer;
+  color: white;
   border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+  background-color: #ff7f50;
 }
 
 /* end hero section */

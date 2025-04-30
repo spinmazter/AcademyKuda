@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Spinmasterz Table Tennis Academy: Founded by ITTF Level One Certified Coach Kudakwashe Mhurure in 2004, Spinmasterz Table Tennis Academy is a premier training facility dedicated to nurturing table tennis talent at all levels. With over 20 years of coaching experience, Coach Kudakwashe specializes in developing players from beginners to advanced athletes, focusing on technique, strategy, and physical conditioning. Our academy offers personalized training programs, competitive tournaments, and a supportive environment for players of all ages. Whether you're aspiring to be a professional or play for fun, Spinmasterz is the ideal place to master your skills and spin your way to success." />
-
-	<title>Responsive Video Playlist</title>
-
-	<link rel="stylesheet" href="Videoplaylist.css">
-	
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinMasterz | Training Highlights</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="Videoplaylist.css">
 </head>
 <body>
+    <div class="video-gallery-wrapper">
+        <header class="gallery-header">
+            <h1>SpinMasterz Training Highlights</h1>
+            <p>Witness the journey of champions in the making</p>
+        </header>
 
-	<!-- Header -->
-    <special-header></special-header>
-    <!-- End Header -->
+        <main class="video-gallery-container">
+            <section class="main-video-section">
+                <div class="main-video-player">
+                    <video id="mainVideo" controls>
+                        <source src="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/videos/VID_20240406_100542.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h2 id="videoTitle">Imaan High Performance</h2>
+                        <p id="videoDescription">Explore our athletes' transformative journeys</p>
+                    </div>
+                </div>
+            </section>
 
-	<div class="container">
-		<div class="main-video-container">
-			<video src="./videos/VID_20240406_100542.mp4" loop controls class="main-video"></video>
-			<h3 class="main-vid-title">Imaan High Performance</h3>
-		</div>
-		<div class="video-list-container" id="videosList"></div>
-	</div>
+            <section class="video-thumbnails-section">
+                <div class="video-thumbnails-grid" id="videosList">
+                    <!-- Thumbnails will be dynamically populated -->
+                </div>
+            </section>
+        </main>
 
-	<script src="Videoplaylist.js"></script>
+        <footer class="gallery-footer">
+            <div class="footer-content">
+                <h3>Every Spin Tells a Story</h3>
+                <p>From raw talent to refined skill, we nurture champions</p>
+                <a href="contact.html" class="cta-button">Start Your Journey</a>
+            </div>
+        </footer>
+    </div>
 
-	
-
+    <script src="Videoplaylist.js"></script>
 </body>
 </html>
