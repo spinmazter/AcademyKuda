@@ -1,0 +1,21 @@
+# SpinMasterzTT Academy Robots.txt
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemaps
+Sitemap: https://www.spinmasterztt.com/sitemap.xml
+
+# Prevent access to admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+
+# Crawl-delay for specific bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a73e8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Table Tennis Training Videos | SpinMasterzTT Academy Tutorials</title>
+    <meta name="description" content="Watch exclusive table tennis training videos, match highlights, and coaching tutorials from SpinMasterzTT Academy. Learn from our champions and improve your game! 🏓">
+    <meta name="keywords" content="table tennis videos, ping pong tutorials, table tennis training videos, SpinMasterzTT Academy videos, table tennis coaching videos, table tennis techniques">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.spinmasterztt.com/videos.html">
+    <meta property="og:title" content="Table Tennis Video Gallery - SpinMasterzTT Academy">
+    <meta property="og:description" content="Explore our collection of table tennis training videos, match highlights, and expert tutorials. Watch champions in action and learn winning techniques! 🎥">
+    <meta property="og:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/video-thumbnail.jpg">
+    <meta property="og:site_name" content="SpinMasterzTT Academy">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Table Tennis Training Videos - SpinMasterzTT">
+    <meta name="twitter:description" content="Watch expert table tennis tutorials, match highlights, and training sessions. Learn from the best at SpinMasterzTT Academy! 📹">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/video-thumbnail.jpg">
+    
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow, max-video-preview:-1">
+    <meta name="author" content="SpinMasterzTT Academy">
+    <meta name="geo.region" content="ZA-GT">
+    <meta name="geo.placename" content="Pretoria">
+    <link rel="canonical" href="https://www.spinmasterztt.com/videos.html">
+
+    <!-- VideoGallery Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Table Tennis Training Videos",
+        "description": "Collection of professional table tennis training videos, tutorials, and match highlights from SpinMasterzTT Academy.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "SpinMasterzTT Academy",
+            "sameAs": "https://www.spinmasterztt.com"
+        },
+        "about": {
+            "@type": "SportsActivity",
+            "name": "Table Tennis",
+            "category": "Training Videos"
+        }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.spinmasterztt.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Media",
+            "item": "https://www.spinmasterztt.com/media"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Training Videos",
+            "item": "https://www.spinmasterztt.com/videos.html"
+        }]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Videoplaylist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header"></div>
+
+    <div class="video-gallery-container">
+        <header class="gallery-header">
+            <div class="header-content">
+                <h1>Training Excellence</h1>
+                <p>Watch our champions in action and witness the dedication behind every serve</p>
+                <div class="header-accent"></div>
+            </div>
+        </header>
+
+        <main class="gallery-content">
+            <section class="video-categories">
+                <div class="category-card" data-category="all">
+                    <i class="fas fa-table-tennis-paddle-ball"></i>
+                    <h3>All Videos</h3>
+                </div>
+                <div class="category-card" data-category="training">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Training Sessions</h3>
+                </div>
+                <div class="category-card" data-category="tournament">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Tournament Highlights</h3>
+                </div>
+                <div class="category-card" data-category="technique">
+                    <i class="fas fa-star"></i>
+                    <h3>Technique Analysis</h3>
+                </div>
+            </section>
+
+            <section class="featured-video-section">
+                <div class="featured-video-container">
+                    <div class="video-wrapper">
+                        <video id="mainVideo" controls>
+                            <source src="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/videos/VID_20240406_100542.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h2 id="videoTitle">High Performance Training</h2>
+                        <p id="videoDescription">Experience the intensity of our elite training sessions</p>
+                        <div class="video-meta">
+                            <span class="video-category"><i class="fas fa-tag"></i> Training</span>
+                            <span class="video-duration"><i class="fas fa-clock"></i> 3:45</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video-thumbnails-section">
+                <h2>Video Collection</h2>
+                <div class="search-bar">
+                    <input type="text" id="videoSearch" placeholder="Search videos...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="video-thumbnails-grid" id="videosList">
+                    <!-- Thumbnails will be dynamically populated -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="gallery-footer">
+            <div class="footer-content">
+                <h3>Every Spin Tells a Story</h3>
+                <p>From raw talent to refined skill, we nurture champions</p>
+                <div class="footer-cta">
+                    <a href="contact.html" class="cta-button">Start Your Journey</a>
+                    <a href="#" class="cta-button secondary">View Schedule</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <script src="Videoplaylist.js"></script>
+    <script src="headerFooterManager.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

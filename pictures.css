@@ -1,20 +1,40 @@
+/* Theme Colors */
+:root {
+    --blue-theme: linear-gradient(135deg, #3494e6, #2196f3);
+    --green-theme: linear-gradient(135deg, #11998e, #38ef7d);
+    --purple-theme: linear-gradient(135deg, #8e2de2, #4a00e0);
+    --orange-theme: linear-gradient(135deg, #ff6b6b, #feca57);
+    --red-theme: linear-gradient(135deg, #ff416c, #ff4b2b);
+    --teal-theme: linear-gradient(135deg, #20bdbe, #2ebdfa);
+    --indigo-theme: linear-gradient(135deg, #6a11cb, #2575fc);
+    --coral-theme: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
 .gallery-section {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 2rem auto;
     padding: 0 1rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fc;
 }
 
 .gallery-container {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.gallery-container:hover {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
 }
 
 .gallery-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .gallery-item {
@@ -23,33 +43,132 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem;
-    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    transition: all 0.3s ease;
 }
 
 .gallery-item img {
     max-width: 100%;
     max-height: 500px;
     object-fit: contain;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
 }
 
 .gallery-item-details {
-    color: #333;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-item-details h3 {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 0.3rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-item-details h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 50%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.gallery-item-details h3:hover::after {
+    width: 80%;
 }
 
 .gallery-item-details p {
-    font-size: 0.9rem;
-    color: #777;
-    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 80%;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.gallery-item.theme-blue .gallery-item-details h3,
+.gallery-item.theme-green .gallery-item-details h3,
+.gallery-item.theme-purple .gallery-item-details h3,
+.gallery-item.theme-orange .gallery-item-details h3,
+.gallery-item.theme-red .gallery-item-details h3,
+.gallery-item.theme-teal .gallery-item-details h3,
+.gallery-item.theme-indigo .gallery-item-details h3,
+.gallery-item.theme-coral .gallery-item-details h3 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item.theme-blue .gallery-item-details p,
+.gallery-item.theme-green .gallery-item-details p,
+.gallery-item.theme-purple .gallery-item-details p,
+.gallery-item.theme-orange .gallery-item-details p,
+.gallery-item.theme-red .gallery-item-details p,
+.gallery-item.theme-teal .gallery-item-details p,
+.gallery-item.theme-indigo .gallery-item-details p,
+.gallery-item.theme-coral .gallery-item-details p {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Theme Color Backgrounds */
+.gallery-item.theme-blue {
+    background: var(--blue-theme);
+    color: white;
+}
+
+.gallery-item.theme-green {
+    background: var(--green-theme);
+    color: white;
+}
+
+.gallery-item.theme-purple {
+    background: var(--purple-theme);
+    color: white;
+}
+
+.gallery-item.theme-orange {
+    background: var(--orange-theme);
+    color: white;
+}
+
+.gallery-item.theme-red {
+    background: var(--red-theme);
+    color: white;
+}
+
+.gallery-item.theme-teal {
+    background: var(--teal-theme);
+    color: white;
+}
+
+.gallery-item.theme-indigo {
+    background: var(--indigo-theme);
+    color: white;
+}
+
+.gallery-item.theme-coral {
+    background: var(--coral-theme);
+    color: white;
 }
 
 .gallery-controls {
@@ -59,29 +178,28 @@
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-}
-
-.gallery-prev, 
-.gallery-next {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background 0.3s;
     z-index: 10;
 }
 
-.gallery-prev:hover, 
-.gallery-next:hover {
-    background: rgba(0, 0, 0, 0.7);
+.gallery-controls button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #333;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-details {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--primary);
-    color: white;
+.gallery-controls button:hover {
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-controls button i {
+    font-size: 1.5rem;
 }
 
 .social-media-icons {
@@ -107,12 +225,31 @@
     color: #007bff;
 }
 
+.gallery-details {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    color: white;
+}
+
 @media (max-width: 768px) {
-    .gallery-item {
-        padding: 1rem;
+    .gallery-section {
+        padding: 0 0.5rem;
     }
-    
-    .gallery-controls {
-        display: none;  /* Optional: hide controls on mobile */
+
+    .gallery-item {
+        padding: 2rem 1rem;
+    }
+
+    .gallery-item img {
+        max-height: 300px;
+    }
+
+    .gallery-controls button {
+        padding: 10px;
+    }
+
+    .gallery-controls button i {
+        font-size: 1rem;
     }
 }

@@ -1,49 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/contact.html</loc>
-    <lastmod>2024-10-31T11:43:58+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/OneOn.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/group.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/highperformance.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/vacation.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/extramu.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/pictures.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://spinmazter.github.io/AcademyKuda/about.html</loc>
-    <lastmod>2024-10-31T11:43:57+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.spinmasterztt.com/</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg</image:loc>
+            <image:title>SpinMasterzTT Academy Logo</image:title>
+        </image:image>
+    </url>
+
+    <!-- Programs Pages -->
+    <url>
+        <loc>https://www.spinmasterztt.com/para.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/wa12.jpg</image:loc>
+            <image:title>Paraplegic Table Tennis Program</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.spinmasterztt.com/oneon.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/coaching.jpg</image:loc>
+            <image:title>Private Table Tennis Coaching</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.spinmasterztt.com/highperformance.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/high-performance.jpg</image:loc>
+            <image:title>High Performance Table Tennis Training</image:title>
+        </image:image>
+    </url>
+
+    <!-- Media Pages -->
+    <url>
+        <loc>https://www.spinmasterztt.com/videos.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/video-thumbnail.jpg</image:loc>
+            <image:title>Table Tennis Training Videos</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.spinmasterztt.com/pictures.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/gallery-cover.jpg</image:loc>
+            <image:title>Table Tennis Photo Gallery</image:title>
+        </image:image>
+    </url>
+
+    <!-- Tournament Pages -->
+    <url>
+        <loc>https://www.spinmasterztt.com/sa.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/21.jpg</image:loc>
+            <image:title>South Africa Open Tournament</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.spinmasterztt.com/gno.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/1b.jpg</image:loc>
+            <image:title>Gauteng North Open Tournament</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.spinmasterztt.com/jo.html</loc>
+        <lastmod>2025-05-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/8.jpg</image:loc>
+            <image:title>Johannesburg Open Tournament</image:title>
+        </image:image>
+    </url>
 </urlset>

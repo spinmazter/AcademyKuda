@@ -3,30 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SpinMasterz Table Tennis Academy Gallery - Showcasing our athletes, achievements, and memorable moments.">
-    <title>SpinMasterz Gallery</title>
+    <meta name="theme-color" content="#1a73e8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <script
-        src="https://kit.fontawesome.com/74f9e77b20.js"
-        crossorigin="anonymous"
-    ></script>
+    <!-- Primary Meta Tags -->
+    <title>Table Tennis Photo Gallery | SpinMasterzTT Academy Moments</title>
+    <meta name="description" content="Browse our collection of table tennis action shots, tournament highlights, and training moments at SpinMasterzTT Academy. Experience the passion and energy! 📸">
+    <meta name="keywords" content="table tennis photos, ping pong gallery, SpinMasterzTT Academy pictures, table tennis tournament photos, table tennis action shots, Pretoria table tennis">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.spinmasterztt.com/pictures.html">
+    <meta property="og:title" content="Table Tennis Photo Gallery - SpinMasterzTT Academy">
+    <meta property="og:description" content="View our stunning collection of table tennis moments, tournament victories, and training sessions. Witness the spirit of SpinMasterzTT Academy! 🏆">
+    <meta property="og:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/gallery-cover.jpg">
+    <meta property="og:site_name" content="SpinMasterzTT Academy">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Table Tennis Photo Gallery - SpinMasterzTT">
+    <meta name="twitter:description" content="Explore our gallery of table tennis excellence. From training sessions to tournament victories, see what makes SpinMasterzTT special! 📷">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/gallery-cover.jpg">
+    
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="SpinMasterzTT Academy">
+    <meta name="geo.region" content="ZA-GT">
+    <meta name="geo.placename" content="Pretoria">
+    <link rel="canonical" href="https://www.spinmasterztt.com/pictures.html">
+
+    <!-- ImageGallery Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "SpinMasterzTT Academy Photo Gallery",
+        "description": "A collection of high-quality photographs showcasing table tennis training, tournaments, and special moments at SpinMasterzTT Academy.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "SpinMasterzTT Academy",
+            "sameAs": "https://www.spinmasterztt.com"
+        },
+        "about": {
+            "@type": "SportsActivity",
+            "name": "Table Tennis",
+            "category": "Sports Photography"
+        }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.spinmasterztt.com/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Media",
+            "item": "https://www.spinmasterztt.com/media"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Photo Gallery",
+            "item": "https://www.spinmasterztt.com/pictures.html"
+        }]
+    }
+    </script>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pictures.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <special-header></special-header>
-    
+    <!-- Header Placeholder -->
+    <div id="header"></div>
+
+    <!-- Main Gallery Section -->
     <main>
         <section class="gallery-section" aria-labelledby="gallery-title">
+            <h1 id="gallery-title" class="visually-hidden">SpinMasterz Academy Gallery</h1>
             <div class="gallery-container" role="region" aria-roledescription="Image Gallery">
                 <div class="gallery-slider">
-                    <div class="gallery-track" role="list">
+                    <div class="gallery-track" role="list" aria-live="polite">
                         <!-- Gallery Items Will Be Dynamically Populated by JavaScript -->
                     </div>
                 </div>
                 
-                <div class="gallery-controls">
+                <div class="gallery-controls" aria-label="Gallery Navigation">
                     <button aria-label="Previous Image" class="gallery-prev" role="button">
                         <i class="fas fa-chevron-left" aria-hidden="true"></i>
                     </button>
@@ -34,18 +103,16 @@
                         <i class="fas fa-chevron-right" aria-hidden="true"></i>
                     </button>
                 </div>
-                
-                
             </div>
         </section>
-
-        <!-- Social Media Icons Section -->
-        
     </main>
 
-    <special-footer></special-footer>
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
 
-    <script src="headerFooterManager.js"></script>
+    <!-- Scripts -->
+    <script src="headerFooterManager.js" defer></script>
+    <script src="script.js" defer></script>
     <script src="pictures.js"></script>
 </body>
 </html>
