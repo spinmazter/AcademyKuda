@@ -1,171 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1a73e8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=yes">
     
     <!-- Primary Meta Tags -->
-    <title>Table Tennis Training Videos | SpinMasterzTT Academy Tutorials</title>
-    <meta name="description" content="Watch exclusive table tennis training videos, match highlights, and coaching tutorials from SpinMasterzTT Academy. Learn from our champions and improve your game! 🏓">
-    <meta name="keywords" content="table tennis videos, ping pong tutorials, table tennis training videos, SpinMasterzTT Academy videos, table tennis coaching videos, table tennis techniques">
+    <title>Table Tennis Training Videos | SpinMasterz Table Tennis Academy</title>
+    <meta name="description" content="Watch our exclusive table tennis training videos, match highlights, and coaching tips from SpinMasterz Table Tennis Academy. Improve your skills with expert video tutorials.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.spinmasterztt.com/videos.html">
-    <meta property="og:title" content="Table Tennis Video Gallery - SpinMasterzTT Academy">
-    <meta property="og:description" content="Explore our collection of table tennis training videos, match highlights, and expert tutorials. Watch champions in action and learn winning techniques! 🎥">
-    <meta property="og:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/video-thumbnail.jpg">
+    <meta property="og:title" content="SpinMasterzTT - Pretoria's Elite Table Tennis Academy">
+    <meta property="og:description" content="Join Pretoria's #1 table tennis academy. ITTF-certified coaching, personalized training programs, and proven results. Start your journey to excellence today! 🏓">
+    <meta property="og:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg">
     <meta property="og:site_name" content="SpinMasterzTT Academy">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Table Tennis Training Videos - SpinMasterzTT">
-    <meta name="twitter:description" content="Watch expert table tennis tutorials, match highlights, and training sessions. Learn from the best at SpinMasterzTT Academy! 📹">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/video-thumbnail.jpg">
+    <meta name="twitter:title" content="SpinMasterzTT - Elite Table Tennis Training">
+    <meta name="twitter:description" content="Level up your table tennis game with ITTF-certified coaching in Pretoria. Professional training for all levels. Book your session now! 🏆">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg">
     
     <!-- Additional SEO -->
-    <meta name="robots" content="index, follow, max-video-preview:-1">
-    <meta name="author" content="SpinMasterzTT Academy">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="author" content="Coach Kudakwashe Mhurure">
     <meta name="geo.region" content="ZA-GT">
     <meta name="geo.placename" content="Pretoria">
     <link rel="canonical" href="https://www.spinmasterztt.com/videos.html">
-
-    <!-- VideoGallery Schema -->
+    
+    <!-- Rich Snippets - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Table Tennis Training Videos",
-        "description": "Collection of professional table tennis training videos, tutorials, and match highlights from SpinMasterzTT Academy.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "SpinMasterzTT Academy",
-            "sameAs": "https://www.spinmasterztt.com"
+        "@type": "SportsClub",
+        "name": "SpinMasterzTT Academy",
+        "description": "Premier table tennis academy in Pretoria offering professional coaching by ITTF-certified Coach Kudakwashe Mhurure",
+        "url": "https://www.spinmasterztt.com",
+        "logo": "https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg",
+        "sameAs": [
+            "https://facebook.com/spinmasterztt",
+            "https://instagram.com/spinmasterztt",
+            "https://twitter.com/spinmasterztt"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pretoria",
+            "addressRegion": "Gauteng",
+            "addressCountry": "ZA"
         },
-        "about": {
-            "@type": "SportsActivity",
-            "name": "Table Tennis",
-            "category": "Training Videos"
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-25.7479",
+            "longitude": "28.2293"
+        },
+        "openingHours": "Mo,Tu,We,Th,Fr 08:00-20:00 Sa 09:00-17:00",
+        "telephone": "+27-YOUR-PHONE",
+        "priceRange": "R$$"
+    }
+    </script>
+
+    <!-- Rich Snippets - Sports Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsOrganization",
+        "name": "SpinMasterzTT Academy",
+        "sport": "Table Tennis",
+        "memberOf": {
+            "@type": "Organization",
+            "name": "South African Table Tennis Board"
         }
     }
     </script>
-
-    <!-- BreadcrumbList Schema -->
+    
+    <!-- Rich Snippets - Training Programs -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.spinmasterztt.com/"
-        }, {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Media",
-            "item": "https://www.spinmasterztt.com/media"
-        }, {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Training Videos",
-            "item": "https://www.spinmasterztt.com/videos.html"
-        }]
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "Course",
+                "name": "Paraplegic Table Tennis Program",
+                "description": "Specialized table tennis coaching program for paraplegic athletes with professional adaptive training",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "SpinMasterzTT Academy",
+                    "sameAs": "https://www.spinmasterztt.com"
+                },
+                "timeRequired": "PT2H",
+                "price": "450",
+                "priceCurrency": "ZAR",
+                "url": "https://www.spinmasterztt.com/para.html"
+            },
+            {
+                "@type": "SportsEvent",
+                "name": "South Africa Open Table Tennis Tournament 2025",
+                "description": "Premier national table tennis tournament featuring top players from across South Africa",
+                "startDate": "2025-06-01",
+                "endDate": "2025-06-03",
+                "location": {
+                    "@type": "Place",
+                    "name": "SpinMasterzTT Academy",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Pretoria",
+                        "addressRegion": "Gauteng",
+                        "addressCountry": "ZA"
+                    }
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "SpinMasterzTT Academy"
+                }
+            },
+            {
+                "@type": "SportsEvent",
+                "name": "Gauteng North Open Tournament 2025",
+                "description": "Regional table tennis championship featuring top players from Gauteng North",
+                "startDate": "2025-07-15",
+                "endDate": "2025-07-17",
+                "location": {
+                    "@type": "Place",
+                    "name": "SpinMasterzTT Academy",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Pretoria",
+                        "addressRegion": "Gauteng",
+                        "addressCountry": "ZA"
+                    }
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "SpinMasterzTT Academy"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Rich Snippets - Training Offerings -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "name": "Beginner Table Tennis Training",
+                "description": "Foundation training for newcomers to table tennis",
+                "price": "350",
+                "priceCurrency": "ZAR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.spinmasterztt.com/#beginner"
+            },
+            {
+                "@type": "Offer",
+                "name": "Advanced Table Tennis Training",
+                "description": "High-performance training for competitive players",
+                "price": "500",
+                "priceCurrency": "ZAR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.spinmasterztt.com/#advanced"
+            },
+            {
+                "@type": "Offer",
+                "name": "Private Coaching Sessions",
+                "description": "One-on-one training with ITTF-certified Coach Kudakwashe Mhurure",
+                "price": "400",
+                "priceCurrency": "ZAR",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.spinmasterztt.com/#private"
+            }
+        ]
     }
     </script>
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Videoplaylist.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="videos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="HeaderFooterManager.js"></script>
 </head>
 <body>
-    <!-- Header Placeholder -->
-    <div id="header"></div>
+    <nav class="navbar">
+        <!-- Header will be inserted here -->
+    </nav>
 
-    <div class="video-gallery-container">
-        <header class="gallery-header">
-            <div class="header-content">
-                <h1>Training Excellence</h1>
-                <p>Watch our champions in action and witness the dedication behind every serve</p>
-                <div class="header-accent"></div>
+    <!-- Hero Section -->
+    <section class="video-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Training Videos</h1>
+            <p class="hero-subtitle">Watch and Learn from Our Champions</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Training Videos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Techniques</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Hours</span>
+                </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <main class="gallery-content">
-            <section class="video-categories">
-                <div class="category-card" data-category="all">
+    <!-- Video Gallery Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-intro">
+                <h2 class="section-title">Training Videos Gallery</h2>
+                <p class="section-subtitle">Explore our collection of professional training sessions and techniques</p>
+            </div>
+
+            <div class="video-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-play-circle"></i>
+                    <span>All Videos</span>
+                </button>
+                <button class="filter-btn" data-filter="technique">
                     <i class="fas fa-table-tennis-paddle-ball"></i>
-                    <h3>All Videos</h3>
-                </div>
-                <div class="category-card" data-category="training">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Training Sessions</h3>
-                </div>
-                <div class="category-card" data-category="tournament">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Tournament Highlights</h3>
-                </div>
-                <div class="category-card" data-category="technique">
-                    <i class="fas fa-star"></i>
-                    <h3>Technique Analysis</h3>
-                </div>
-            </section>
+                    <span>Techniques</span>
+                </button>
+                <button class="filter-btn" data-filter="training">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Training</span>
+                </button>
+                <button class="filter-btn" data-filter="footwork">
+                    <i class="fas fa-shoe-prints"></i>
+                    <span>Footwork</span>
+                </button>
+            </div>
 
-            <section class="featured-video-section">
-                <div class="featured-video-container">
-                    <div class="video-wrapper">
-                        <video id="mainVideo" controls>
-                            <source src="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/videos/VID_20240406_100542.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <div class="video-overlay">
-                            <div class="play-button">
+            <!-- Featured Video Player -->
+            <div class="featured-video-container">
+                <div class="featured-player">
+                    <video id="featured-player" playsinline controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-info">
+                    <h3 id="video-title">Select a video to play</h3>
+                    <p id="video-description">Click on any video thumbnail below to start watching</p>
+                </div>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="video-grid" id="video-grid">
+                <!-- Videos will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Footer will be inserted here -->
+    </footer>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script>
+        // Video data
+        const videos = [
+            {
+                video: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/videos/VID_20240406_100542.mp4',
+                title: 'Imaan High Performance',
+                description: 'Pushing limits through precision and power',
+                category: 'technique'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/2.mp4',
+                title: 'Derick Endurance Training',
+                description: 'Building stamina and mental resilience',
+                category: 'training'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/3.mp4',
+                title: 'Madelize Imaan Machine',
+                description: 'Advanced technique and precision training',
+                category: 'technique'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/4.mp4',
+                title: 'Aditi Machine Training',
+                description: 'Developing consistency and technical skills',
+                category: 'training'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/5.mp4',
+                title: 'Sazi Machine Technique',
+                description: 'Mastering advanced table tennis skills',
+                category: 'technique'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/6.mp4',
+                title: 'Imaan Franco Technique',
+                description: 'Exploring advanced Franco-style techniques',
+                category: 'technique'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/2.mp4',
+                title: 'Derick Footwork Mastery',
+                description: 'Perfecting footwork and movement patterns',
+                category: 'footwork'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/11.mp4',
+                title: 'Aditi Footwork Precision',
+                description: 'Developing agile and strategic footwork',
+                category: 'footwork'
+            },
+            {
+                video: 'https://github.com/spinmazter/AcademyKuda/raw/main/videos/10.mp4',
+                title: 'Madelize Franco Style',
+                description: 'Exploring unique Franco-inspired techniques',
+                category: 'technique'
+            }
+        ];
+
+        // Initialize featured video player
+        const player = new Plyr('#featured-player', {
+            controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+            settings: ['captions', 'quality', 'speed'],
+            quality: { default: 720, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
+        });
+
+        // Function to play selected video
+        function playVideo(index) {
+            const video = videos[index];
+            const videoElement = document.querySelector('#featured-player');
+            
+            // Update video source
+            videoElement.src = video.video;
+            videoElement.load(); // Important: reload the video with new source
+            
+            // Update video information
+            document.getElementById('video-title').textContent = video.title;
+            document.getElementById('video-description').textContent = video.description;
+            
+            // Play the video
+            player.play().catch(error => {
+                console.log("Error playing video:", error);
+            });
+            
+            // Scroll to player
+            document.querySelector('.featured-video-container').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+
+        // Function to create video thumbnails
+        function createVideoThumbnails() {
+            const grid = document.getElementById('video-grid');
+            
+            videos.forEach((video, index) => {
+                const item = document.createElement('div');
+                item.className = 'video-item';
+                item.setAttribute('data-category', video.category);
+                
+                item.innerHTML = `
+                    <div class="video-card" onclick="playVideo(${index})">
+                        <div class="video-thumbnail">
+                            <video src="${video.video}" muted preload="metadata"></video>
+                            <div class="play-overlay">
                                 <i class="fas fa-play"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="video-info">
-                        <h2 id="videoTitle">High Performance Training</h2>
-                        <p id="videoDescription">Experience the intensity of our elite training sessions</p>
-                        <div class="video-meta">
-                            <span class="video-category"><i class="fas fa-tag"></i> Training</span>
-                            <span class="video-duration"><i class="fas fa-clock"></i> 3:45</span>
+                        <div class="video-info">
+                            <h3>${video.title}</h3>
+                            <p>${video.description}</p>
                         </div>
                     </div>
-                </div>
-            </section>
+                `;
+                
+                grid.appendChild(item);
 
-            <section class="video-thumbnails-section">
-                <h2>Video Collection</h2>
-                <div class="search-bar">
-                    <input type="text" id="videoSearch" placeholder="Search videos...">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="video-thumbnails-grid" id="videosList">
-                    <!-- Thumbnails will be dynamically populated -->
-                </div>
-            </section>
-        </main>
+                // Set thumbnail preview
+                const thumbnailVideo = item.querySelector('video');
+                thumbnailVideo.addEventListener('loadeddata', function() {
+                    thumbnailVideo.currentTime = 1;
+                });
+            });
+        }
 
-        <footer class="gallery-footer">
-            <div class="footer-content">
-                <h3>Every Spin Tells a Story</h3>
-                <p>From raw talent to refined skill, we nurture champions</p>
-                <div class="footer-cta">
-                    <a href="contact.html" class="cta-button">Start Your Journey</a>
-                    <a href="#" class="cta-button secondary">View Schedule</a>
-                </div>
-            </div>
-        </footer>
-    </div>
+        // Initialize gallery when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            createVideoThumbnails();
+            
+            // Load first video by default
+            if(videos.length > 0) {
+                const videoElement = document.querySelector('#featured-player');
+                videoElement.src = videos[0].video;
+                document.getElementById('video-title').textContent = videos[0].title;
+                document.getElementById('video-description').textContent = videos[0].description;
+            }
+        });
 
-    <!-- Footer Placeholder -->
-    <div id="footer"></div>
-
-    <script src="Videoplaylist.js"></script>
-    <script src="headerFooterManager.js" defer></script>
-    <script src="script.js" defer></script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                document.querySelectorAll('.video-item').forEach(item => {
+                    if(filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
-</html>
+</html> 

@@ -9,11 +9,12 @@
     <meta name="format-detection" content="telephone=yes">
     
     <!-- Primary Meta Tags -->
-    <title>Gallery - SpinMasterz Table Tennis Academy</title>
+    <title>Book a Table Tennis Session | SpinMasterz Table Tennis Academy</title>
+    <meta name="description" content="Book your table tennis training session online with SpinMasterz Table Tennis Academy. Secure your spot for private, group, or high-performance coaching in Pretoria.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.spinmasterztt.com/pictures.html">
+    <meta property="og:url" content="https://www.spinmasterztt.com/booking.html">
     <meta property="og:title" content="SpinMasterzTT - Pretoria's Elite Table Tennis Academy">
     <meta property="og:description" content="Join Pretoria's #1 table tennis academy. ITTF-certified coaching, personalized training programs, and proven results. Start your journey to excellence today! 🏓">
     <meta property="og:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg">
@@ -30,7 +31,7 @@
     <meta name="author" content="Coach Kudakwashe Mhurure">
     <meta name="geo.region" content="ZA-GT">
     <meta name="geo.placename" content="Pretoria">
-    <link rel="canonical" href="https://www.spinmasterztt.com/pictures.html">
+    <link rel="canonical" href="https://www.spinmasterztt.com/booking.html">
     
     <!-- Rich Snippets - Organization -->
     <script type="application/ld+json">
@@ -181,7 +182,7 @@
     </script>
     
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="pictures.css">
+    <link rel="stylesheet" href="booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="HeaderFooterManager.js"></script>
@@ -191,78 +192,103 @@
         <!-- Header will be inserted here -->
     </nav>
 
-    <!-- Hero Section -->
-    <section class="gallery-hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Our Champions Gallery</h1>
-            <p class="hero-subtitle">Celebrating Victories and Achievements</p>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">100+</span>
-                    <span class="stat-label">Champions</span>
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h1>Book Your Coaching Session</h1>
+                <p>Select your preferred date, time, and coach to begin your journey</p>
+            </div>
+
+            <div class="booking-grid">
+                <!-- Calendar Column -->
+                <div class="calendar-column">
+                    <div class="calendar-wrapper">
+                        <div class="calendar-header">
+                            <h2>Select Date & Time</h2>
+                        </div>
+                        <div id="booking-calendar"></div>
+                        <div class="time-slots">
+                            <h3>Available Time Slots</h3>
+                            <div id="time-slots-container"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Tournaments</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">200+</span>
-                    <span class="stat-label">Victories</span>
+
+                <!-- Booking Form Column -->
+                <div class="booking-form-column">
+                    <form id="booking-form" class="booking-form">
+                        <h2>Booking Details</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp Number</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="coach">Select Coach</label>
+                            <select id="coach" name="coach" required>
+                                <option value="">Choose a coach</option>
+                                <option value="coach1">Coach Kuda</option>
+                                <option value="coach2">Coach Michael</option>
+                                <option value="coach3">Coach Sarah</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="session-type">Session Type</label>
+                            <select id="session-type" name="session-type" required>
+                                <option value="">Select session type</option>
+                                <option value="private">Private Session</option>
+                                <option value="group">Group Session</option>
+                                <option value="assessment">Assessment Session</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skill-level">Your Skill Level</label>
+                            <select id="skill-level" name="skill-level" required>
+                                <option value="">Select your level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                                <option value="professional">Professional</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea id="notes" name="notes" rows="3"></textarea>
+                        </div>
+
+                        <div class="selected-slot-display">
+                            <h3>Selected Time Slot</h3>
+                            <p id="selected-date-time">No time slot selected</p>
+                        </div>
+
+                        <button type="submit" class="submit-booking">
+                            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="gallery-intro">
-                <h2 class="section-title">Our Photo Gallery</h2>
-                <p class="section-subtitle">Explore our collection of memorable moments and achievements</p>
-            </div>
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">
-                    <i class="fas fa-th"></i>
-                    <span>All Photos</span>
-                </button>
-                <button class="filter-btn" data-filter="tournaments">
-                    <i class="fas fa-trophy"></i>
-                    <span>Tournaments</span>
-                </button>
-                <button class="filter-btn" data-filter="training">
-                    <i class="fas fa-table-tennis-paddle-ball"></i>
-                    <span>Training</span>
-                </button>
-                <button class="filter-btn" data-filter="events">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>Events</span>
-                </button>
-            </div>
-            <div class="wrapper">
-                <div class="gallery" id="gallery"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal Preview Box and Shadow -->
-    <div class="preview-box">
-        <div class="details">
-            <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
-            <span class="icon fas fa-times"></span>
-        </div>
-        <div class="image-box">
-            <div class="slide prev"><i class="fas fa-angle-left"></i></div>
-            <div class="slide next"><i class="fas fa-angle-right"></i></div>
-            <img src="" alt="">
-        </div>
-    </div>
-    <div class="shadow"></div>
 
     <footer class="footer">
         <!-- Footer will be inserted here -->
     </footer>
 
-    <script src="pictures.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="booking.js"></script>
 </body>
 </html> 

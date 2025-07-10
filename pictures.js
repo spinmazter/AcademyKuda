@@ -1,286 +1,113 @@
-// pictures.js
-document.addEventListener('DOMContentLoaded', () => {
-    const galleryTrack = document.querySelector('.gallery-track');
-    const prevButton = document.querySelector('.gallery-prev');
-    const nextButton = document.querySelector('.gallery-next');
-    let currentIndex = 0;
+// Gallery images data (from pictures.html)
+const images = [
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new12.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new10.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/1.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert1.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert2.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert3.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert4.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert5.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new15.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/IMG_1600.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/2m.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/extra%20m1.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/wa8.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/welcome.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new6.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/2b.png',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/27.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/29.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/20.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/21.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/3a.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/IMG_2342.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/44.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/sazi.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new8.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/30.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/FB_IMG_1664903679928.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/70.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/67.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/18.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/26.jpg',
+    'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/storm.jpg'
+];
 
-    // Image data with details and added color themes
-    const galleryImages = [
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new12.jpg',
-            name: 'Nicke',
-            description: 'U15s, South Africa Games..!',
-            theme: 'blue'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new10.jpg',
-            name: 'Madelize',
-            description: 'U19s, South Africa Games..!',
-            theme: 'green'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/1.jpg',
-            name: 'Liam',
-            description: 'U15s, South Africa Games..!',
-            theme: 'purple'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert1.jpg',
-            name: 'Werner',
-            description: 'Opens, Gauteng North Closed..!',
-            theme: 'orange'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert2.jpg',
-            name: 'Nicke',
-            description: 'U19s, Gauteng North Closed..!',
-            theme: 'red'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert3.jpg',
-            name: 'Madelize',
-            description: 'U19s, Winner Gauteng North Closed..!',
-            theme: 'teal'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert4.jpg',
-            name: 'Madelize&Imaan',
-            description: 'Under19s, 2nd and 3rd place Gauteng North..!',
-            theme: 'indigo'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert5.jpg',
-            name: 'Vedansh',
-            description: 'U15s, Gauteng North Closed..!',
-            theme: 'coral'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new15.jpg',
-            name: 'Aditi',
-            description: 'U13s, Winner Gauteng North Closed..!',
-            theme: 'blue'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/IMG_1600.jpg',
-            name: 'Oos-Moot',
-            description: 'Schools League, 2nd position in League..!',
-            theme: 'green'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/2m.jpg',
-            name: 'Oos-Moot',
-            description: 'Extra-Murals, Pretoria League..!',
-            theme: 'purple'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/extra%20m1.jpg',
-            name: 'Team Oos-Moot',
-            description: 'Gauteng North School League..!',
-            theme: 'orange'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/wa8.jpg',
-            name: 'Imaan&Aditi',
-            description: '1st&2nd, Gauteng North Closed..!',
-            theme: 'red'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/welcome.jpg',
-            name: 'Storm',
-            description: 'Gauteng North Player..!',
-            theme: 'teal'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new6.jpg',
-            name: 'Sazi&Vedansh',
-            description: 'U13s, South Africa Games..!',
-            theme: 'indigo'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/2b.png',
-            name: 'Imaan',
-            description: 'U13s, Winner Gauteng North Closed..!',
-            theme: 'coral'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/27.jpg',
-            name: 'Liam',
-            description: 'U19s, Gauteng North Closed..!',
-            theme: 'blue'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/29.jpg',
-            name: 'Imaan',
-            description: 'U13s, South Africa Games..!',
-            theme: 'green'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/20.jpg',
-            name: 'Derick',
-            description: 'Under15s Team, South Africa Games..!',
-            theme: 'purple'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/21.jpg',
-            name: 'Sazi',
-            description: 'Gold Medal, South Africa Games..!',
-            theme: 'orange'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/3a.jpg',
-            name: 'Nicke',
-            description: 'U19s, South Africa Games..!',
-            theme: 'red'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/IMG_2342.jpg',
-            name: 'Shane',
-            description: 'U15s, South Africa Games..!',
-            theme: 'teal'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/44.jpg',
-            name: 'Liam',
-            description: 'U15s, Cape Town South Africa Games..!',
-            theme: 'indigo'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/20.jpg',
-            name: 'Derick&Shane',
-            description: 'U15s, Cape Town South Africa Games..!',
-            theme: 'coral'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/sazi.jpg',
-            name: 'Sazi',
-            description: 'U13s, South Africa Games Cape Town..!',
-            theme: 'blue'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new8.jpg',
-            name: 'Kelly',
-            description: 'U15s, South Africa Games..!',
-            theme: 'green'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new15.jpg',
-            name: 'Imaan',
-            description: 'U15s, South Africa Games Cape Town..!',
-            theme: 'purple'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/30.jpg',
-            name: 'Madelize',
-            description: 'U19s, Winner Gauteng North Closed..!',
-            theme: 'orange'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/FB_IMG_1664903679928.jpg',
-            name: 'Madelize&Nicke',
-            description: 'U19s, South Africa Games..!',
-            theme: 'red'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/70.jpg',
-            name: 'Nicke',
-            description: 'U19s, South Africa Games..!',
-            theme: 'teal'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/67.jpg',
-            name: 'Imaan',
-            description: 'Practice, SpinMasterz Academy..!',
-            theme: 'indigo'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/18.jpg',
-            name: 'Derick',
-            description: 'U15 Team, South Africa Games Cape Town..!',
-            theme: 'coral'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/26.jpg',
-            name: 'Madelize',
-            description: 'U19s, Winner Gauteng North Closed..!',
-            theme: 'blue'
-        },
-        {
-            src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/storm.jpg',
-            name: 'Storm',
-            description: 'U19s, Gauteng North Open..!',
-            theme: 'green'
-        }
-    ];
+// Dynamically create gallery items
+const galleryContainer = document.getElementById('gallery');
+if (galleryContainer) {
+    images.forEach((src, idx) => {
+        const imageDiv = document.createElement('div');
+        imageDiv.className = 'image';
+        imageDiv.innerHTML = `<span><img src="${src}" alt="Gallery Image ${idx+1}" loading="lazy"></span>`;
+        galleryContainer.appendChild(imageDiv);
+    });
+}
 
-    // Function to format player names
-    function formatPlayerName(name) {
-        // Split names with '&' to handle multiple names
-        const names = name.split('&');
-        
-        // Capitalize first letter of each name and handle multiple names
-        const formattedNames = names.map(n => 
-            n.split(' ').map(word => 
-                word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-            ).join(' ')
-        ).join(' & ');
-        
-        return formattedNames;
-    }
+// Modal logic
+const gallery = document.querySelectorAll('.gallery .image');
+const previewBox = document.querySelector('.preview-box');
+const previewImg = previewBox.querySelector('img');
+const closeIcon = previewBox.querySelector('.icon');
+const currentImg = previewBox.querySelector('.current-img');
+const totalImg = previewBox.querySelector('.total-img');
+const shadow = document.querySelector('.shadow');
+const prevBtn = document.querySelector('.slide.prev');
+const nextBtn = document.querySelector('.slide.next');
 
-    // Function to create gallery items
-    function createGalleryItem(image) {
-        const galleryItem = document.createElement('div');
-        galleryItem.classList.add('gallery-item', `theme-${image.theme}`);
-        
-        const imgElement = document.createElement('img');
-        imgElement.src = image.src;
-        imgElement.alt = image.name;
-        
-        const detailsDiv = document.createElement('div');
-        detailsDiv.classList.add('gallery-item-details');
-        
-        const nameHeading = document.createElement('h3');
-        nameHeading.textContent = formatPlayerName(image.name);
-        
-        const descriptionPara = document.createElement('p');
-        descriptionPara.textContent = image.description;
-        
-        detailsDiv.appendChild(nameHeading);
-        detailsDiv.appendChild(descriptionPara);
-        
-        galleryItem.appendChild(imgElement);
-        galleryItem.appendChild(detailsDiv);
-        
-        return galleryItem;
-    }
+let newIndex = 0;
+let clickedImgIndex = 0;
 
-    // Populate gallery
-    function populateGallery() {
-        galleryTrack.innerHTML = '';
-        galleryImages.forEach(image => {
-            const galleryItem = createGalleryItem(image);
-            galleryTrack.appendChild(galleryItem);
-        });
-    }
+totalImg.textContent = gallery.length;
 
-    // Slide functionality
-    function slideGallery(direction) {
-        const itemWidth = galleryTrack.querySelector('.gallery-item').offsetWidth;
-        currentIndex += direction;
-        
-        // Wrap around gallery
-        if (currentIndex < 0) currentIndex = galleryImages.length - 1;
-        if (currentIndex >= galleryImages.length) currentIndex = 0;
-        
-        const offset = -currentIndex * itemWidth;
-        galleryTrack.style.transform = `translateX(${offset}px)`;
-    }
-
-    // Event listeners for navigation
-    prevButton.addEventListener('click', () => slideGallery(-1));
-    nextButton.addEventListener('click', () => slideGallery(1));
-
-    // Initial population
-    populateGallery();
+gallery.forEach((imgDiv, i) => {
+    imgDiv.onclick = () => {
+        newIndex = i;
+        clickedImgIndex = i;
+        updatePreview();
+        showModal();
+    };
 });
+
+function updatePreview() {
+    currentImg.textContent = newIndex + 1;
+    const imgTag = gallery[newIndex].querySelector('img');
+    previewImg.src = imgTag.src;
+    prevBtn.style.display = newIndex === 0 ? 'none' : 'block';
+    nextBtn.style.display = newIndex === gallery.length - 1 ? 'none' : 'block';
+}
+
+function showModal() {
+    previewBox.classList.add('show');
+    shadow.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function hideModal() {
+    previewBox.classList.remove('show');
+    shadow.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+prevBtn.onclick = () => {
+    if (newIndex > 0) {
+        newIndex--;
+        updatePreview();
+    }
+};
+nextBtn.onclick = () => {
+    if (newIndex < gallery.length - 1) {
+        newIndex++;
+        updatePreview();
+    }
+};
+closeIcon.onclick = hideModal;
+shadow.onclick = hideModal;
+
+document.addEventListener('keydown', function(e) {
+    if (!previewBox.classList.contains('show')) return;
+    if (e.key === 'ArrowLeft') prevBtn.click();
+    if (e.key === 'ArrowRight') nextBtn.click();
+    if (e.key === 'Escape') hideModal();
+}); 

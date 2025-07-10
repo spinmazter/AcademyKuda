@@ -1,22 +1,22 @@
 /* Variables */
 :root {
-    --primary-color: #ff9f1c;
-    --secondary-color: #2ec4b6;
-    --accent-color: #e71d36;
-    --background-color: #fdfffc;
-    --text-color: #011627;
-    --light-gray: #8d99ae;
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --accent-color: #FFC107;
+    --background-color: #F5F5F5;
+    --text-color: #333333;
+    --light-gray: #757575;
     --white: #ffffff;
     --transition: all 0.3s ease;
 }
 
 /* Hero Section */
-.vacation-hero {
+.extra-hero {
     position: relative;
     height: 80vh;
     min-height: 600px;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
-    url('https://raw.githubusercontent.com/spinmazter/AcademyKuda/cd0f1a66b4ca6f7470c2c1169928f6659650e0ec/img/wa16.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), 
+    url('https://raw.githubusercontent.com/spinmazter/AcademyKuda/cd0f1a66b4ca6f7470c2c1169928f6659650e0ec/img/Aditi3.jpg');
 
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@
     text-align: center;
     transition: var(--transition);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-bottom: 4px solid var(--primary-color);
+    border-top: 4px solid var(--primary-color);
 }
 
 .feature-card:hover {
@@ -129,8 +129,8 @@
     line-height: 1.6;
 }
 
-/* Camp Schedule */
-.camp-schedule {
+/* School Schedule */
+.school-schedule {
     padding: 6rem 0;
     background-color: var(--white);
 }
@@ -147,7 +147,7 @@
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-left: 4px solid var(--secondary-color);
+    border-left: 4px solid var(--accent-color);
 }
 
 .schedule-card .day {
@@ -230,7 +230,7 @@
 }
 
 .story-content .achievement {
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -254,32 +254,32 @@
     padding: 2rem;
 }
 
-.camp-details {
+.program-details {
     background: var(--white);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.camp-details h3 {
+.program-details h3 {
     color: var(--text-color);
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-.camp-details ul {
+.program-details ul {
     list-style: none;
     padding: 0;
 }
 
-.camp-details li {
+.program-details li {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     color: var(--text-color);
 }
 
-.camp-details li i {
+.program-details li i {
     color: var(--primary-color);
     margin-right: 1rem;
 }
@@ -322,7 +322,7 @@
 .form-group select:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(255,159,28,0.2);
+    box-shadow: 0 0 0 2px rgba(76,175,80,0.2);
 }
 
 .submit-btn {
@@ -387,7 +387,7 @@
     .feature-card,
     .schedule-card,
     .story-card,
-    .camp-details,
+    .program-details,
     .registration-form {
         padding: 1.5rem;
     }
