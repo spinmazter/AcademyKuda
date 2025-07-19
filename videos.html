@@ -242,19 +242,6 @@
                 </button>
             </div>
 
-            <!-- Featured Video Player -->
-            <div class="featured-video-container">
-                <div class="featured-player">
-                    <video id="featured-player" playsinline controls>
-                        <source src="" type="video/mp4">
-                    </video>
-                </div>
-                <div class="video-info">
-                    <h3 id="video-title">Select a video to play</h3>
-                    <p id="video-description">Click on any video thumbnail below to start watching</p>
-                </div>
-            </div>
-
             <!-- Video Grid -->
             <div class="video-grid" id="video-grid">
                 <!-- Videos will be inserted here by JavaScript -->
@@ -266,7 +253,6 @@
         <!-- Footer will be inserted here -->
     </footer>
 
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script>
         // Video data
         const videos = [
@@ -326,40 +312,8 @@
             }
         ];
 
-        // Initialize featured video player
-        const player = new Plyr('#featured-player', {
-            controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
-            settings: ['captions', 'quality', 'speed'],
-            quality: { default: 720, options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240] }
-        });
-
-        // Function to play selected video
-        function playVideo(index) {
-            const video = videos[index];
-            const videoElement = document.querySelector('#featured-player');
-            
-            // Update video source
-            videoElement.src = video.video;
-            videoElement.load(); // Important: reload the video with new source
-            
-            // Update video information
-            document.getElementById('video-title').textContent = video.title;
-            document.getElementById('video-description').textContent = video.description;
-            
-            // Play the video
-            player.play().catch(error => {
-                console.log("Error playing video:", error);
-            });
-            
-            // Scroll to player
-            document.querySelector('.featured-video-container').scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-
-        // Function to create video thumbnails
-        function createVideoThumbnails() {
+        // Function to create video cards
+        function createVideoCards() {
             const grid = document.getElementById('video-grid');
             
             videos.forEach((video, index) => {
@@ -368,41 +322,28 @@
                 item.setAttribute('data-category', video.category);
                 
                 item.innerHTML = `
-                    <div class="video-card" onclick="playVideo(${index})">
-                        <div class="video-thumbnail">
-                            <video src="${video.video}" muted preload="metadata"></video>
-                            <div class="play-overlay">
-                                <i class="fas fa-play"></i>
-                            </div>
+                    <div class="video-card">
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="${video.video}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div class="video-info">
                             <h3>${video.title}</h3>
                             <p>${video.description}</p>
+                            <span class="video-category">${video.category}</span>
                         </div>
                     </div>
                 `;
                 
                 grid.appendChild(item);
-
-                // Set thumbnail preview
-                const thumbnailVideo = item.querySelector('video');
-                thumbnailVideo.addEventListener('loadeddata', function() {
-                    thumbnailVideo.currentTime = 1;
-                });
             });
         }
 
         // Initialize gallery when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
-            createVideoThumbnails();
-            
-            // Load first video by default
-            if(videos.length > 0) {
-                const videoElement = document.querySelector('#featured-player');
-                videoElement.src = videos[0].video;
-                document.getElementById('video-title').textContent = videos[0].title;
-                document.getElementById('video-description').textContent = videos[0].description;
-            }
+            createVideoCards();
         });
 
         // Filter functionality
