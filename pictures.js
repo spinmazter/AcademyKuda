@@ -311,6 +311,234 @@ const images = [
         title: 'Aditi4',
         description: 'Aditi showing great form.',
         category: 'Training'
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112705_1.jpg?raw=true",
+        title: "IMG_20240706_112705_1",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa4.jpg?raw=true",
+        title: "wa4",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa25.jpg?raw=true",
+        title: "wa25",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/derick%20Me.jpg?raw=true",
+        title: "derick Me",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa19.jpg?raw=true",
+        title: "wa19",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa14.jpg?raw=true",
+        title: "wa14",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new14.jpg?raw=true",
+        title: "new14",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa21.jpg?raw=true",
+        title: "wa21",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima7.jpg?raw=true",
+        title: "Ima7",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/kudaAction.jpg?raw=true",
+        title: "kudaAction",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa24.jpg?raw=true",
+        title: "wa24",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_2381.jpg?raw=true",
+        title: "IMG_2381",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112706.jpg?raw=true",
+        title: "IMG_20240706_112706",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new2.jpg?raw=true",
+        title: "new2",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/matches.jpg?raw=true",
+        title: "matches",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new3.jpg?raw=true",
+        title: "new3",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima9.jpg?raw=true",
+        title: "Ima9",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima1.jpg?raw=true",
+        title: "Ima1",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_2421.jpg?raw=true",
+        title: "IMG_2421",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112707.jpg?raw=true",
+        title: "IMG_20240706_112707",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa7.jpg?raw=true",
+        title: "wa7",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa2.jpg?raw=true",
+        title: "wa2",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new8.jpg?raw=true",
+        title: "new8",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new15.jpg?raw=true",
+        title: "new15",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_2812.jpg?raw=true",
+        title: "IMG_2812",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima6.jpg?raw=true",
+        title: "Ima6",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112708.jpg?raw=true",
+        title: "IMG_20240706_112708",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_3252.jpg?raw=true",
+        title: "IMG_3252",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima.jpg?raw=true",
+        title: "Ima",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Me%20Vic.jpg?raw=true",
+        title: "Me Vic",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new4.jpg?raw=true",
+        title: "new4",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/coachK.jpg?raw=true",
+        title: "coachK",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/coaches%202.jpg?raw=true",
+        title: "coaches 2",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new10.jpg?raw=true",
+        title: "new10",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa5.jpg?raw=true",
+        title: "wa5",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/sazi.jpg?raw=true",
+        title: "sazi",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa16.jpg?raw=true",
+        title: "wa16",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new7.jpg?raw=true",
+        title: "new7",
+        description: "Captured moment at SpinMasterzTT Academy.",
+        category: "Training"
     }
 ];
 
