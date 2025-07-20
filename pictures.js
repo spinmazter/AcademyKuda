@@ -197,6 +197,120 @@ const images = [
         title: 'Coach Saz Advanced Training',
         description: 'Mastering advanced techniques with expert coaching guidance.',
         category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Coaching1.jpg?raw=true',
+        title: 'Coaching1',
+        description: 'Coaching session in action at SpinMasterzTT Academy.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Ima7.jpg?raw=true',
+        title: 'Ima7',
+        description: 'Training and development at SpinMasterzTT Academy.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Derek3.jpg?raw=true',
+        title: 'Derek3',
+        description: 'Focused training session with Derek.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Ima4.jpg?raw=true',
+        title: 'Ima4',
+        description: 'Athlete in action at SpinMasterzTT Academy.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/josh.jpg?raw=true',
+        title: 'Josh',
+        description: 'Josh during a training session.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Vedansh5.jpg?raw=true',
+        title: 'Vedansh5',
+        description: 'Vedansh showing great form in training.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Saz.jpg?raw=true',
+        title: 'Saz',
+        description: 'Coach Saz inspiring the next generation.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Ima5.jpg?raw=true',
+        title: 'Ima5',
+        description: 'Training at SpinMasterzTT Academy.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Derek2.jpg?raw=true',
+        title: 'Derek2',
+        description: 'Derek in a competitive match.',
+        category: 'Tournaments'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Shane3.jpg?raw=true',
+        title: 'Shane3',
+        description: 'Shane demonstrating advanced skills.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Aditi2.jpg?raw=true',
+        title: 'Aditi2',
+        description: 'Aditi in a focused training session.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Vedansh3.jpg?raw=true',
+        title: 'Vedansh3',
+        description: 'Vedansh working on technique.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/10.jpg?raw=true',
+        title: 'Image10',
+        description: 'Memorable moment at SpinMasterzTT Academy.',
+        category: 'Events'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/11.jpg?raw=true',
+        title: 'Image11',
+        description: 'Another great day at the academy.',
+        category: 'Events'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Aditi3.jpg?raw=true',
+        title: 'Aditi3',
+        description: 'Aditi practicing advanced drills.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/FB_IMG_1664903786722.jpg?raw=true',
+        title: 'FB_IMG_1664903786722',
+        description: 'Fun and camaraderie at SpinMasterzTT Academy.',
+        category: 'Events'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/FB_IMG_1665475425602.jpg?raw=true',
+        title: 'FB_IMG_1665475425602',
+        description: 'Celebrating achievements together.',
+        category: 'Events'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Franco.jpg?raw=true',
+        title: 'Franco',
+        description: 'Franco in action at the academy.',
+        category: 'Training'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Aditi4.jpg?raw=true',
+        title: 'Aditi4',
+        description: 'Aditi showing great form.',
+        category: 'Training'
     }
 ];
 
