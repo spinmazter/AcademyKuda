@@ -191,6 +191,12 @@ const images = [
         title: 'Stormy Match Day',
         description: 'Facing challenges head-on during intense competition.',
         category: 'Events'
+    },
+    {
+        src: 'https://github.com/spinmazter/AcademyKuda/blob/b2d659516473fdd7b2504e335a2b1147398b83e2/img/Saz2.jpg?raw=true',
+        title: 'Coach Saz Advanced Training',
+        description: 'Mastering advanced techniques with expert coaching guidance.',
+        category: 'Training'
     }
 ];
 
