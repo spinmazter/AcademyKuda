@@ -32,8 +32,8 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert3.jpg',
-        title: 'National Champion',
-        description: 'Proud moment as our player claims the national championship title.',
+        title: 'Provincial U19 Champion',
+        description: 'Proud moment as our player claims the provincial championship title.',
         category: 'Tournaments'
     },
     {
@@ -44,7 +44,7 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/cert5.jpg',
-        title: 'Best Player Award',
+        title: 'Runners-up Award',
         description: 'Celebrating excellence and outstanding performance in table tennis.',
         category: 'Tournaments'
     },
