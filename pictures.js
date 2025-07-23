@@ -50,49 +50,49 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new15.jpg',
-        title: 'Focused Drills',
+        title: 'Provincial U13 Champion',
         description: 'Perfecting technique through systematic and focused training drills.',
         category: 'Training'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/IMG_1600.jpg',
-        title: 'Academy Open Day',
+        title: 'Extra Mural Activities',
         description: 'Welcoming new members and showcasing our world-class facilities.',
         category: 'Events'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/2m.jpg',
-        title: 'Morning Practice',
+        title: 'School League Match',
         description: 'Early morning sessions building discipline and improving skills.',
         category: 'Training'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/extra%20m1.jpg',
-        title: 'Extra Mile Session',
+        title: 'Finals School League',
         description: 'Going beyond the basics with advanced training techniques.',
         category: 'Training'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/wa8.jpg',
-        title: 'Welcoming New Members',
+        title: 'Winners Provincial Tournament',
         description: 'Creating an inclusive environment for all table tennis enthusiasts.',
         category: 'Events'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/welcome.jpg',
-        title: 'Welcome Ceremony',
-        description: 'Official welcome ceremony for new academy members.',
+        title: 'Provincial Champion',
+        description: 'Product of SpinMasterz Academy.',
         category: 'Events'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new6.jpg',
-        title: 'High Performance Training',
+        title: 'Under 13 Provincial Team',
         description: 'Elite training programs designed for competitive excellence.',
         category: 'Training'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/2b.png',
-        title: 'Doubles Champions',
+        title: 'Under 13 Champion',
         description: 'Celebrating success in doubles competition with perfect teamwork.',
         category: 'Tournaments'
     },
@@ -110,13 +110,13 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/20.jpg',
-        title: 'Community Outreach',
+        title: 'Under 15s Provincial Team',
         description: 'Connecting with the community and promoting table tennis.',
         category: 'Events'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/21.jpg',
-        title: 'Family Day',
+        title: 'Gold Metal  SA Games',
         description: 'Bringing families together through the love of table tennis.',
         category: 'Events'
     },
@@ -128,7 +128,7 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/IMG_2342.jpg',
-        title: 'Academy Gathering',
+        title: 'Under 15s Provincial Team',
         description: 'Building community spirit through regular academy gatherings.',
         category: 'Events'
     },
@@ -140,32 +140,32 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/sazi.jpg',
-        title: 'Coach Sazi in Action',
+        title: 'South Africa Games',
         description: 'Our experienced coach demonstrating expert techniques.',
         category: 'Training'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/new8.jpg',
-        title: 'Youth Training',
+        title: 'South Africa Games',
         description: 'Nurturing young talent with age-appropriate training programs.',
         category: 'Training'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/30.jpg',
-        title: 'Medal Ceremony',
-        description: 'Proud moments during medal ceremonies celebrating achievements.',
+        title: 'Winner 19 Provincials',
+        description: 'Proud moment as we celebrate a big achievement.',
         category: 'Tournaments'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/FB_IMG_1664903679928.jpg',
-        title: 'Fun Day',
+        title: 'Under 19s Provincial Team',
         description: 'Enjoying the lighter side of table tennis with fun activities.',
         category: 'Events'
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/70.jpg',
-        title: 'Speed Drills',
-        description: 'Improving reaction time and speed through specialized drills.',
+        title: 'South Africa games',
+        description: 'Showing exceptional skill during matches.',
         category: 'Training'
     },
     {
@@ -176,7 +176,7 @@ const images = [
     },
     {
         src: 'https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/18.jpg',
-        title: 'Academy Social',
+        title: 'South Africa Games',
         description: 'Building friendships and community through social events.',
         category: 'Events'
     },
@@ -194,31 +194,31 @@ const images = [
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/b2d659516473fdd7b2504e335a2b1147398b83e2/img/Saz2.jpg?raw=true',
-        title: 'Coach Saz Advanced Training',
+        title: 'Gauteng North Closed Tournament',
         description: 'Mastering advanced techniques with expert coaching guidance.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Coaching1.jpg?raw=true',
-        title: 'Coaching1',
+        title: 'Gold Medal 15s Provincial',
         description: 'Coaching session in action at SpinMasterzTT Academy.',
-        category: 'Training'
+        category: 'Tournaments'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Ima7.jpg?raw=true',
-        title: 'Ima7',
+        title: 'Runners-Up 19',
         description: 'Training and development at SpinMasterzTT Academy.',
-        category: 'Training'
+        category: 'Tournaments'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Derek3.jpg?raw=true',
-        title: 'Derek3',
+        title: 'Derek',
         description: 'Focused training session with Derek.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Ima4.jpg?raw=true',
-        title: 'Ima4',
+        title: 'Runners-Up U19s Provincials',
         description: 'Athlete in action at SpinMasterzTT Academy.',
         category: 'Training'
     },
@@ -230,73 +230,73 @@ const images = [
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Vedansh5.jpg?raw=true',
-        title: 'Vedansh5',
-        description: 'Vedansh showing great form in training.',
+        title: 'Vedansh',
+        description: 'Bronze medal U15s Provincials.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Saz.jpg?raw=true',
-        title: 'Saz',
-        description: 'Coach Saz inspiring the next generation.',
+        title: 'Sazi',
+        description: 'Winning mentality.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Ima5.jpg?raw=true',
-        title: 'Ima5',
+        title: 'Winner',
         description: 'Training at SpinMasterzTT Academy.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Derek2.jpg?raw=true',
-        title: 'Derek2',
+        title: 'Derek',
         description: 'Derek in a competitive match.',
         category: 'Tournaments'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Shane3.jpg?raw=true',
-        title: 'Shane3',
+        title: 'Shane',
         description: 'Shane demonstrating advanced skills.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Aditi2.jpg?raw=true',
-        title: 'Aditi2',
-        description: 'Aditi in a focused training session.',
-        category: 'Training'
+        title: '1st Place',
+        description: 'Aditi U15s Provincial Champion.',
+        category: 'Tournaments'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Vedansh3.jpg?raw=true',
-        title: 'Vedansh3',
-        description: 'Vedansh working on technique.',
+        title: 'Vedansh',
+        description: 'Vedansh 3rd place finish.',
         category: 'Training'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/10.jpg?raw=true',
-        title: 'Image10',
+        title: 'South Africa Games',
         description: 'Memorable moment at SpinMasterzTT Academy.',
         category: 'Events'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/11.jpg?raw=true',
-        title: 'Image11',
-        description: 'Another great day at the academy.',
+        title: 'Derek',
+        description: 'Another great day for the academy.',
         category: 'Events'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Aditi3.jpg?raw=true',
-        title: 'Aditi3',
-        description: 'Aditi practicing advanced drills.',
-        category: 'Training'
+        title: 'Aditi',
+        description: 'Awards Ceremony.',
+        category: 'Events'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/FB_IMG_1664903786722.jpg?raw=true',
-        title: 'FB_IMG_1664903786722',
-        description: 'Fun and camaraderie at SpinMasterzTT Academy.',
+        title: 'Under 13 Team',
+        description: 'South Africa Games.',
         category: 'Events'
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/FB_IMG_1665475425602.jpg?raw=true',
-        title: 'FB_IMG_1665475425602',
+        title: 'Nicke',
         description: 'Celebrating achievements together.',
         category: 'Events'
     },
@@ -308,27 +308,27 @@ const images = [
     },
     {
         src: 'https://github.com/spinmazter/AcademyKuda/blob/df29da56ccab111c7e283509464f14b9c7296067/img/Aditi4.jpg?raw=true',
-        title: 'Aditi4',
-        description: 'Aditi showing great form.',
-        category: 'Training'
+        title: 'Aditi',
+        description: 'Aditi on her way to winning the event.',
+        category: 'Tournaments'
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112705_1.jpg?raw=true",
-        title: "IMG_20240706_112705_1",
+        title: "Sazi putting in the work",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa4.jpg?raw=true",
-        title: "wa4",
+        title: "Aditi winner U13s",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa25.jpg?raw=true",
-        title: "wa25",
+        title: "Winner",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/derick%20Me.jpg?raw=true",
@@ -338,33 +338,33 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa19.jpg?raw=true",
-        title: "wa19",
+        title: "Under 15 Champion",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa14.jpg?raw=true",
-        title: "wa14",
+        title: "Champion",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new14.jpg?raw=true",
-        title: "new14",
+        title: "Shane",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa21.jpg?raw=true",
-        title: "wa21",
+        title: "Aditi",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima7.jpg?raw=true",
-        title: "Ima7",
+        title: "Imaan",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/kudaAction.jpg?raw=true",
@@ -374,27 +374,27 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa24.jpg?raw=true",
-        title: "wa24",
+        title: "Silver Medal Provincials",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_2381.jpg?raw=true",
-        title: "IMG_2381",
+        title: "Madelize",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112706.jpg?raw=true",
-        title: "IMG_20240706_112706",
+        title: "Sazi",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new2.jpg?raw=true",
-        title: "new2",
-        description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        title: "Silver Medal Team Events",
+        description: "Captured moment at South Africa Games.",
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/matches.jpg?raw=true",
@@ -404,51 +404,51 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new3.jpg?raw=true",
-        title: "new3",
+        title: "Mixed Doubles",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima9.jpg?raw=true",
-        title: "Ima9",
+        title: "Imaan",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima1.jpg?raw=true",
-        title: "Ima1",
+        title: "Winner",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_2421.jpg?raw=true",
-        title: "IMG_2421",
+        title: "Liam",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112707.jpg?raw=true",
-        title: "IMG_20240706_112707",
+        title: "Sazi",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa7.jpg?raw=true",
-        title: "wa7",
+        title: "Victory",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Events"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa2.jpg?raw=true",
-        title: "wa2",
+        title: "Shane",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new8.jpg?raw=true",
-        title: "new8",
-        description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        title: "Kelly",
+        description: "Captured moment at South Africa Games.",
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new15.jpg?raw=true",
@@ -458,37 +458,37 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_2812.jpg?raw=true",
-        title: "IMG_2812",
+        title: "Umpire Duties",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima6.jpg?raw=true",
-        title: "Ima6",
+        title: "Imaan",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_20240706_112708.jpg?raw=true",
-        title: "IMG_20240706_112708",
+        title: "Loop Training",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/IMG_3252.jpg?raw=true",
-        title: "IMG_3252",
+        title: "Cape Town",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Ima.jpg?raw=true",
-        title: "Ima",
+        title: "Imaan",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/Me%20Vic.jpg?raw=true",
-        title: "Me Vic",
+        title: "Zim National Team",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
@@ -506,7 +506,7 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/coaches%202.jpg?raw=true",
-        title: "coaches 2",
+        title: "Level One Coaching",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Training"
     },
@@ -518,9 +518,9 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa5.jpg?raw=true",
-        title: "wa5",
+        title: "Glory",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/sazi.jpg?raw=true",
@@ -530,15 +530,15 @@ const images = [
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/wa16.jpg?raw=true",
-        title: "wa16",
+        title: "winner",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     },
     {
         src: "https://github.com/spinmazter/AcademyKuda/blob/407633661d47cd885ebc25e9f1ba972134dc5e95/img/new7.jpg?raw=true",
-        title: "new7",
+        title: "South Africa Games",
         description: "Captured moment at SpinMasterzTT Academy.",
-        category: "Training"
+        category: "Tournaments"
     }
 ];
 
