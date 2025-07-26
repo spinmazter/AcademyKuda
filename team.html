@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a73e8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=yes">
+    
+    <title>Meet Our Team | SpinMasterzTT Academy</title>
+    <meta name="description" content="Meet the expert coaching team at SpinMasterzTT Academy. Our ITTF-certified coaches bring years of experience and championship success to your training.">
+    
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="HeaderFooterManager.js"></script>
+    
+    <style>
+        .team-hero {
+            background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .team-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .team-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .member-image {
+            position: relative;
+            height: 350px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.05);
+        }
+        
+        .member-info {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            color: #1a73e8;
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+        
+        .member-role {
+            color: #666;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .member-bio {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .member-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .member-social a {
+            color: #1a73e8;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .member-social a:hover {
+            color: #0d47a1;
+        }
+        
+        .join-team {
+            background: #f8f9fa;
+            padding: 80px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .join-team h2 {
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+        
+        .join-team p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .team-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Header will be inserted here -->
+        <li class="nav-item"><a href="booking.html" class="nav-link book-now-link"><i class="fas fa-calendar-alt"></i> Book a Session</a></li>
+    </nav>
+
+    <section class="team-hero">
+        <h1>Meet Our Team</h1>
+        <p>Our team of ITTF-certified coaches brings together decades of professional playing experience and championship success to guide you on your table tennis journey.</p>
+    </section>
+
+    <div class="team-container">
+        <div class="team-grid">
+            <!-- Head Coach -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://raw.githubusercontent.com/spinmazter/AcademyKuda/main/img/coachK.jpg" alt="Coach Kuda - Head Coach">
+                </div>
+                <div class="member-info">
+                    <h3>Kudakwashe Mhurure</h3>
+                    <span class="member-role">Head Coach & Founder</span>
+                    <p class="member-bio">ITTF Level 1 Certified Coach with over 15 years of professional coaching experience. Former national champion.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assistant Coach 1 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/400x500/1a73e8/ffffff?text=Coach+Name" alt="Assistant Coach">
+                </div>
+                <div class="member-info">
+                    <h3>Kudakwashe M</h3>
+                    <span class="member-role">Senior Coach</span>
+                    <p class="member-bio">ITTF Level 1 Certified with 15 years of coaching experience. Specializes in footwork and defensive & offensive strategies.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assistant Coach 2 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://via.placeholder.com/400x500/0d47a1/ffffff?text=Coach+Name" alt="Assistant Coach">
+                </div>
+                <div class="member-info">
+                    <h3>Kuda Mhurure</h3>
+                    <span class="member-role">Junior Coach</span>
+                    <p class="member-bio">Head Coach with 15 years of coaching experience. Focuses on developing young talent.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="join-team">
+        <div class="container">
+            <h2>Join Our Team</h2>
+            <p>We're always looking for passionate and qualified table tennis coaches to join our growing team. If you're interested in becoming part of the SpinMasterzTT family, we'd love to hear from you.</p>
+            <a href="contact.html" class="cta-primary">Contact Us About Positions</a>
+        </div>
+    </section>
+
+    <script>
+        // Header and Footer will be managed by HeaderFooterManager.js
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add any interactive elements here
+            const teamMembers = document.querySelectorAll('.team-member');
+            
+            teamMembers.forEach(member => {
+                member.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
