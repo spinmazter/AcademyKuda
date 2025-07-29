@@ -54,7 +54,9 @@ class HeaderFooterManager {
                         Transforming passionate players into champions through world-class table tennis training and personalized coaching.
                     </p>
                     <div class="socials">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/groups/468275692499194" target="_blank" class="social-link">
+  <i class="fab fa-facebook-f"></i>
+</a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.youtube.com/@kudamhurure" class="social-link" target="_blank" rel="noopener noreferrer">
