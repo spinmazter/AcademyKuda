@@ -539,6 +539,54 @@ const images = [
         title: "South Africa Games",
         description: "Captured moment at SpinMasterzTT Academy.",
         category: "Tournaments"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/derek%20medals.jpg?raw=true",
+        title: "Derek Medals",
+        description: "Derek proudly displaying his collection of medals and achievements.",
+        category: "Tournaments"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/team1.jpg?raw=true",
+        title: "Team Photo 1",
+        description: "Our dedicated team of players and coaches working together for success.",
+        category: "Events"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/gno%20podium1.jpg?raw=true",
+        title: "GNO Podium 1",
+        description: "Celebrating podium finishes at the Gauteng North Open tournament.",
+        category: "Tournaments"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/doubles.jpg?raw=true",
+        title: "Doubles Match",
+        description: "Exciting doubles action showcasing teamwork and coordination.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/team.jpg?raw=true",
+        title: "Team Photo",
+        description: "The complete SpinMasterzTT Academy team united in excellence.",
+        category: "Events"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/derekcoach.jpg?raw=true",
+        title: "Coach Derek",
+        description: "Coach Derek sharing his expertise and passion for table tennis.",
+        category: "Training"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/gno%20podium.jpg?raw=true",
+        title: "GNO Podium",
+        description: "Proud moments on the podium at the Gauteng North Open competition.",
+        category: "Tournaments"
+    },
+    {
+        src: "https://github.com/spinmazter/AcademyKuda/blob/ed37c6a5544ef62b9dab63ab95c77e10a66305aa/img/doubles3.jpg?raw=true",
+        title: "Doubles Match 3",
+        description: "Another thrilling doubles match demonstrating skill and strategy.",
+        category: "Training"
     }
 ];
 
