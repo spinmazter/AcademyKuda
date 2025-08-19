@@ -14,32 +14,32 @@ class HeaderFooterManager {
             </div>
 
             <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i>Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i>About</a></li>
                 
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">Programs <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="nav-link"><i class="fas fa-dumbbell"></i>Programs <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="highperformance.html">High Performance</a></li>
-                        <li><a href="one.html">One on One</a></li>
-                        <li><a href="group.html">Group Training</a></li>
-                        <li><a href="vacation.html">Vacation Training</a></li>
-                        <li><a href="extra.html">Extra Murals</a></li>
-                        <li><a href="para.html">Para Classes</a></li>
-                        <li><a href="tournaments.html">Tournaments</a></li>
+                        <li><a href="highperformance.html"><i class="fas fa-trophy"></i>High Performance</a></li>
+                        <li><a href="one.html"><i class="fas fa-user"></i>One on One</a></li>
+                        <li><a href="group.html"><i class="fas fa-users"></i>Group Training</a></li>
+                        <li><a href="vacation.html"><i class="fas fa-calendar-week"></i>Vacation Training</a></li>
+                        <li><a href="extra.html"><i class="fas fa-plus"></i>Extra Murals</a></li>
+                        <li><a href="para.html"><i class="fas fa-wheelchair"></i>Para Classes</a></li>
+                        <li><a href="tournaments.html"><i class="fas fa-medal"></i>Tournaments</a></li>
                     </ul>
                 </li>
                 
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">Gallery <i class="fas fa-chevron-down"></i></a>
+                    <a href="#" class="nav-link"><i class="fas fa-images"></i>Gallery <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="pictures.html">Pictures</a></li>
-                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="pictures.html"><i class="fas fa-camera"></i>Pictures</a></li>
+                        <li><a href="videos.html"><i class="fas fa-video"></i>Videos</a></li>
                     </ul>
                 </li>
                 
-                <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="testimonials.html" class="nav-link"><i class="fas fa-quote-left"></i>Testimonials</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
             </ul>
         `;
 
