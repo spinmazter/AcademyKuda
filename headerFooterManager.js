@@ -154,17 +154,46 @@ class HeaderFooterManager {
         const navMenu = document.querySelector('.nav-menu');
 
         if (hamburger && navMenu) {
+            // Hamburger menu toggle
             hamburger.addEventListener('click', () => {
                 hamburger.classList.toggle('active');
                 navMenu.classList.toggle('active');
             });
 
-            // Close menu when clicking a link
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+
+            // Close menu when clicking a link (but not dropdown toggles)
             document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
+                link.addEventListener('click', (e) => {
+                    // Don't close menu if this is a dropdown toggle
+                    const parentDropdown = link.closest('.dropdown');
+                    if (parentDropdown && window.innerWidth <= 968) {
+                        // This is a dropdown toggle in mobile view, don't close the menu
+                        return;
+                    }
+
+                    // Close menu for regular links
                     hamburger.classList.remove('active');
                     navMenu.classList.remove('active');
                 });
+            });
+
+            // Remove mobile menu on window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 968) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    // Also close any open dropdowns
+                    document.querySelectorAll('.dropdown').forEach(dropdown => {
+                        dropdown.classList.remove('active');
+                    });
+                }
             });
         }
     }
@@ -172,14 +201,44 @@ class HeaderFooterManager {
     // Setup dropdown menus
     setupDropdowns() {
         const dropdowns = document.querySelectorAll('.dropdown');
-        
+
         dropdowns.forEach(dropdown => {
-            // For mobile devices
-            dropdown.addEventListener('click', (e) => {
-                if (window.innerWidth <= 968) {
-                    e.preventDefault();
-                    dropdown.classList.toggle('active');
-                }
+            const dropdownLink = dropdown.querySelector('.nav-link');
+
+            // For mobile devices - handle dropdown toggle
+            if (dropdownLink) {
+                dropdownLink.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 968) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        // Close other dropdowns
+                        dropdowns.forEach(otherDropdown => {
+                            if (otherDropdown !== dropdown) {
+                                otherDropdown.classList.remove('active');
+                            }
+                        });
+
+                        // Toggle current dropdown
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+
+            // Handle clicks on dropdown menu items (close menu after selection)
+            const dropdownItems = dropdown.querySelectorAll('.dropdown-menu a');
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (window.innerWidth <= 968) {
+                        const hamburger = document.querySelector('.hamburger');
+                        const navMenu = document.querySelector('.nav-menu');
+                        if (hamburger && navMenu) {
+                            hamburger.classList.remove('active');
+                            navMenu.classList.remove('active');
+                        }
+                        dropdown.classList.remove('active');
+                    }
+                });
             });
 
             // For desktop hover
