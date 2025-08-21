@@ -9,8 +9,13 @@
     <meta name="format-detection" content="telephone=yes">
     
     <!-- Primary Meta Tags -->
-    <title>Holiday & Vacation Table Tennis Camps | SpinMasterz Table Tennis Academy</title>
-    <meta name="description" content="Join our holiday and vacation table tennis camps for intensive training, fun activities, and skill development. Perfect for students during school breaks. Book your spot at SpinMasterz Table Tennis Academy.">
+    <title>Holiday Table Tennis Camp R150/day | 4-Day Program | Mon-Thu 9am-1pm Pretoria</title>
+    <meta name="description" content="🏕️ Best value holiday camp R150/day! 4-day intensive program Mon-Thu 9am-1pm. Fun training, tournaments, skill development. Perfect for school holidays. Book now!">
+    <meta name="keywords" content="holiday table tennis camp Pretoria, school holiday activities, R150 per day camp, 4 day table tennis program, vacation coaching, kids holiday activities Pretoria, table tennis camp Gauteng">
+    <meta name="price" content="R150">
+    <meta name="duration" content="4 days">
+    <meta name="schedule" content="Monday-Thursday 9am-1pm">
+    <meta name="service.type" content="Holiday Camp">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -407,5 +412,32 @@ ${medical}
             alert('Opening your email client to send the registration...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for Vacation Coaching
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show cost notification after 3 seconds - stays for 10 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Holiday Camp Available 🏕️',
+                    'Join our 4-day intensive camp at R150 per day! Monday-Thursday 9am-1pm during school holidays.',
+                    'info',
+                    10000  // 10 seconds duration for cost visibility
+                );
+            }, 3000);
+
+            // Show additional value proposition after 25 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Perfect Holiday Activity! 🎯',
+                    'Keep your kids active and learning during holidays. Fun training with friends and tournaments!',
+                    'success'
+                );
+            }, 25000);
+        });
+    </script>
 </body>
-</html> 
+</html>

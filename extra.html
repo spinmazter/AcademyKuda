@@ -416,5 +416,32 @@ Phone: ${phone}
             alert('Opening your email client to send the registration...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for Extra-Mural Program
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show cost notification after 3 seconds - stays for 10 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Extra-Mural Program Available 🎓',
+                    'Join our after-school program at R700 per student per school term. Perfect for skill development!',
+                    'info',
+                    10000  // 10 seconds duration for cost visibility
+                );
+            }, 3000);
+
+            // Show additional value proposition after 25 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Perfect After-School Activity! 📚',
+                    'Keep your child active and learning after school. Great for focus, fitness, and making friends!',
+                    'success'
+                );
+            }, 25000);
+        });
+    </script>
 </body>
-</html> 
+</html>

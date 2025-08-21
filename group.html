@@ -9,8 +9,12 @@
     <meta name="format-detection" content="telephone=yes">
     
     <!-- Primary Meta Tags -->
-    <title>Group Table Tennis Training | SpinMasterz Table Tennis Academy</title>
-    <meta name="description" content="Join our group table tennis training sessions for interactive drills, peer learning, and match practice. Perfect for all skill levels at SpinMasterz Table Tennis Academy in Pretoria.">
+    <title>Group Table Tennis Training R600/month | Saturdays 9am-12pm | Pretoria</title>
+    <meta name="description" content="👥 Affordable group training R600/month! Every Saturday 9am-12pm. Interactive drills, peer learning, match practice. All skill levels welcome. Join our table tennis family!">
+    <meta name="keywords" content="group table tennis training Pretoria, affordable table tennis lessons, Saturday table tennis classes, R600 per month training, group coaching sessions, table tennis club Pretoria, weekend table tennis training">
+    <meta name="price" content="R600">
+    <meta name="schedule" content="Saturdays 9am-12pm">
+    <meta name="service.type" content="Group Training">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -390,5 +394,32 @@ ${experience}
             alert('Opening your email client to send the registration...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for Group Training
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show cost notification after 3 seconds - stays for 10 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Group Training Available 👥',
+                    'Join our group sessions at R600 per month! Training every Saturday 9am-12pm with fellow players.',
+                    'info',
+                    10000  // 10 seconds duration for cost visibility
+                );
+            }, 3000);
+
+            // Show additional value proposition after 25 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Train with Others! 🤝',
+                    'Learn faster through peer interaction and friendly competition. Join our Saturday group today!',
+                    'success'
+                );
+            }, 25000);
+        });
+    </script>
 </body>
-</html> 
+</html>

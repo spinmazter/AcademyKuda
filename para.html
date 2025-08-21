@@ -9,8 +9,13 @@
     <meta name="format-detection" content="telephone=yes">
     
     <!-- Primary Meta Tags -->
-    <title>Paraplegic Table Tennis Program | SpinMasterz Table Tennis Academy</title>
-    <meta name="description" content="Specialized paraplegic table tennis coaching program with adaptive training and professional support. Empowering athletes with disabilities at SpinMasterz Table Tennis Academy.">
+    <title>Paralympic Table Tennis Training R320/hr | Adaptive Coaching | Wheelchair Accessible Pretoria</title>
+    <meta name="description" content="♿ Elite Paralympic table tennis training R320/hr. Specialized adaptive coaching, wheelchair accessible facility. Paralympic pathway support. Breaking barriers, building champions!">
+    <meta name="keywords" content="Paralympic table tennis training Pretoria, wheelchair table tennis coaching, adaptive sports Pretoria, paraplegic table tennis lessons, disability sports coaching, Paralympic training South Africa, inclusive table tennis academy">
+    <meta name="price" content="R320">
+    <meta name="accessibility" content="Wheelchair Accessible">
+    <meta name="specialization" content="Paralympic Training">
+    <meta name="service.type" content="Adaptive Coaching">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -432,5 +437,32 @@ ${requirements}
             alert('Opening your email client to send the registration...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for Paraplegic Program
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show cost notification after 3 seconds - stays for 10 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Adaptive Training Available ♿',
+                    'Specialized paraplegic coaching at R320 per hour. Expert adaptive training with professional support!',
+                    'info',
+                    10000  // 10 seconds duration for cost visibility
+                );
+            }, 3000);
+
+            // Show additional value proposition after 25 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Breaking Barriers! 🏆',
+                    'Join our inclusive community and train for Paralympic competition. Excellence has no limits!',
+                    'success'
+                );
+            }, 25000);
+        });
+    </script>
 </body>
-</html> 
+</html>

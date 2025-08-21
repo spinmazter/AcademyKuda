@@ -9,21 +9,24 @@
     <meta name="format-detection" content="telephone=yes">
     
     <!-- Primary Meta Tags -->
-    <title>Private Table Tennis Coaching | SpinMasterz Table Tennis Academy</title>
-    <meta name="description" content="Book private table tennis coaching sessions for personalized training and rapid improvement. One-on-one lessons with ITTF-certified coaches at SpinMasterz Table Tennis Academy.">
+    <title>Private Table Tennis Coaching R320/hr | ITTF Certified | 1-on-1 Training Pretoria</title>
+    <meta name="description" content="🎯 Premium 1-on-1 table tennis coaching R320/hr with ITTF certified Coach Kuda. Personalized training, rapid improvement guaranteed. 20+ national champions trained. Book now!">
+    <meta name="keywords" content="private table tennis coaching Pretoria, one on one table tennis lessons, ITTF certified coach, personalized table tennis training, table tennis coach Pretoria, individual coaching sessions, professional table tennis instructor, R320 per hour coaching">
+    <meta name="price" content="R320">
+    <meta name="service.type" content="Private Coaching">
     
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="service">
     <meta property="og:url" content="https://www.spinmasterztt.com/one.html">
-    <meta property="og:title" content="SpinMasterzTT - Pretoria's Elite Table Tennis Academy">
-    <meta property="og:description" content="Join Pretoria's #1 table tennis academy. ITTF-certified coaching, personalized training programs, and proven results. Start your journey to excellence today! 🏓">
+    <meta property="og:title" content="🎯 Private Table Tennis Coaching R320/hr | ITTF Certified Coach Kuda">
+    <meta property="og:description" content="Premium 1-on-1 coaching with ITTF certified Coach Kuda. Personalized training, rapid improvement. 20+ national champions trained. Book your session now!">
     <meta property="og:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg">
     <meta property="og:site_name" content="SpinMasterzTT Academy">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SpinMasterzTT - Elite Table Tennis Training">
-    <meta name="twitter:description" content="Level up your table tennis game with ITTF-certified coaching in Pretoria. Professional training for all levels. Book your session now! 🏆">
+    <meta name="twitter:title" content="🎯 Private Table Tennis Coaching R320/hr | ITTF Certified">
+    <meta name="twitter:description" content="Premium 1-on-1 coaching with ITTF certified Coach Kuda. Personalized training, rapid improvement guaranteed. Book your session now!">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/spinmazter/AcademyKuda/c944539b304cb381d3039759c387f635d2c3e6ef/img/logo.jpg">
     
     <!-- Additional SEO -->
@@ -234,7 +237,7 @@
     </section>
 
     <!-- Training Programs -->
-    <section class="programs">
+    <section class="programs-section">
         <div class="container">
             <div class="section-title">
                 <h2>Training Programs</h2>
@@ -388,5 +391,32 @@ ${message}
             alert('Opening your email client to send the booking request...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for Private Coaching
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show cost notification after 3 seconds - stays for 10 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Private Coaching Available 🎯',
+                    'Personalized one-on-one training at R320 per hour. Get expert attention tailored to your needs!',
+                    'info',
+                    10000  // 10 seconds duration for cost visibility
+                );
+            }, 3000);
+
+            // Show additional value proposition after 25 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Ready for Personal Growth? 🚀',
+                    'Book your private session and accelerate your table tennis journey today!',
+                    'success'
+                );
+            }, 25000);
+        });
+    </script>
 </body>
-</html> 
+</html>

@@ -119,10 +119,25 @@ body {
 }
 
 /* Training Programs */
-.programs {
+.programs-section {
     padding: 8rem 0;
     background: var(--primary);
     color: var(--text-light);
+}
+
+/* Ensure footer programs section is not affected */
+.footer .programs {
+    padding: 0 !important;
+    background: transparent !important;
+    color: inherit !important;
+}
+
+.footer .programs h3 {
+    color: #64b5f6 !important;
+}
+
+.footer .programs ul li a {
+    color: #e8eaed !important;
 }
 
 .program-cards {

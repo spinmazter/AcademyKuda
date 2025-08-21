@@ -389,5 +389,32 @@ ${experience}
             alert('Opening your email client to send the registration...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for Tournaments
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show tournament cost info after 3 seconds - stays for 12 seconds (longer for more info)
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Tournament Information 🏆',
+                    'Tournament costs are set by organizers. SpinMasterz will communicate all fees to players and parents in advance.',
+                    'info',
+                    12000  // 12 seconds duration for important cost information
+                );
+            }, 3000);
+
+            // Show additional value proposition after 28 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Ready to Compete? 🥇',
+                    'Join our tournament circuit and compete at provincial and national levels. Register your interest today!',
+                    'success'
+                );
+            }, 28000);
+        });
+    </script>
 </body>
-</html> 
+</html>

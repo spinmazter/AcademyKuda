@@ -45,9 +45,23 @@
 }
 
 /* Contact Information */
-.contact-info {
+.contact-section .contact-info {
     padding: 4rem 0;
     background-color: var(--background-color);
+}
+
+/* Ensure footer contact section is not affected */
+.footer .contact-info {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+.footer .contact-info h3 {
+    color: #64b5f6 !important;
+}
+
+.footer .contact-item span {
+    color: #e8eaed !important;
 }
 
 .info-grid {

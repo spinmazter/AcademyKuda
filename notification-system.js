@@ -1,5 +1,9 @@
 class NotificationSystem {
-    constructor() {
+    constructor(options = {}) {
+        this.options = {
+            showDefaultNotifications: true,
+            ...options
+        };
         this.init();
     }
 
@@ -12,18 +16,21 @@ class NotificationSystem {
         notificationContainer.className = 'notification-container';
         document.body.appendChild(notificationContainer);
 
-        // Show welcome notification after 3 seconds
-        setTimeout(() => {
-            this.showNotification('Welcome to SpinMasterz! 🏓', 'Book your first session and get 20% off!', 'success');
-        }, 3000);
+        // Only show default notifications if enabled
+        if (this.options.showDefaultNotifications) {
+            // Show welcome notification after 3 seconds
+            setTimeout(() => {
+                this.showNotification('Welcome to SpinMasterz! 🏓', 'Book your first session and get 20% off!', 'success');
+            }, 3000);
 
-        // Show booking reminder after 30 seconds
-        setTimeout(() => {
-            this.showNotification('Ready to start?', 'Our coaches are waiting to help you improve your game!', 'info');
-        }, 30000);
+            // Show booking reminder after 30 seconds
+            setTimeout(() => {
+                this.showNotification('Ready to start?', 'Our coaches are waiting to help you improve your game!', 'info');
+            }, 30000);
+        }
     }
 
-    showNotification(title, message, type = 'info') {
+    showNotification(title, message, type = 'info', duration = 5000) {
         const notification = document.createElement('div');
         notification.className = `notification notification-${type}`;
         notification.innerHTML = `
@@ -47,10 +54,10 @@ class NotificationSystem {
             notification.classList.add('show');
         }, 100);
 
-        // Auto remove after 5 seconds
+        // Auto remove after specified duration
         setTimeout(() => {
             this.removeNotification(notification);
-        }, 5000);
+        }, duration);
 
         // Close button
         notification.querySelector('.notification-close').addEventListener('click', () => {

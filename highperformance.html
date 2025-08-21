@@ -369,5 +369,32 @@ ${experience}
             alert('Opening your email client to send the application...');
         });
     </script>
+    <script src="notification-system.js"></script>
+    <script>
+        // Custom notification for High Performance Program
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize notification system without default notifications
+            const notificationSystem = new NotificationSystem({ showDefaultNotifications: false });
+
+            // Show cost notification after 3 seconds - stays for 10 seconds
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'High Performance Program 💪',
+                    'Elite training at R320 per hour. Transform your game with professional coaching!',
+                    'info',
+                    10000  // 10 seconds duration for cost visibility
+                );
+            }, 3000);
+
+            // Show additional value proposition after 25 seconds (after cost notification disappears)
+            setTimeout(() => {
+                notificationSystem.showNotification(
+                    'Ready to Go Pro? 🏆',
+                    'Join our elite athletes and compete at national level. Book your assessment today!',
+                    'success'
+                );
+            }, 25000);
+        });
+    </script>
 </body>
-</html> 
+</html>
