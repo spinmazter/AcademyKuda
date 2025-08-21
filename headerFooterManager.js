@@ -153,11 +153,26 @@ class HeaderFooterManager {
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
+        // Force hamburger visibility check on mobile devices
+        this.checkMobileDisplay();
+
         if (hamburger && navMenu) {
             // Hamburger menu toggle
-            hamburger.addEventListener('click', () => {
+            hamburger.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
                 hamburger.classList.toggle('active');
                 navMenu.classList.toggle('active');
+
+                // Force display for mobile debugging
+                if (navMenu.classList.contains('active')) {
+                    navMenu.style.display = 'flex';
+                    navMenu.style.left = '0';
+                    navMenu.style.zIndex = '1000';
+                } else {
+                    navMenu.style.left = '-100%';
+                }
             });
 
             // Close menu when clicking outside
@@ -184,7 +199,7 @@ class HeaderFooterManager {
                 });
             });
 
-            // Remove mobile menu on window resize
+            // Remove mobile menu on window resize and handle mobile display
             window.addEventListener('resize', () => {
                 if (window.innerWidth > 968) {
                     hamburger.classList.remove('active');
@@ -193,8 +208,41 @@ class HeaderFooterManager {
                     document.querySelectorAll('.dropdown').forEach(dropdown => {
                         dropdown.classList.remove('active');
                     });
+                } else {
+                    // Re-check mobile display on resize/orientation change
+                    this.checkMobileDisplay();
                 }
             });
+
+            // Handle orientation change on mobile devices
+            window.addEventListener('orientationchange', () => {
+                setTimeout(() => {
+                    this.checkMobileDisplay();
+                }, 100);
+            });
+        }
+    }
+
+    // Check and force mobile display if needed
+    checkMobileDisplay() {
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Check if we're on a mobile device
+        const isMobile = window.innerWidth <= 968 ||
+                        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+                        (window.orientation !== undefined);
+
+        if (isMobile && hamburger && navMenu) {
+            // Force hamburger to show on mobile
+            hamburger.style.display = 'block';
+            hamburger.style.position = 'relative';
+            hamburger.style.zIndex = '1001';
+
+            // Ensure nav menu is properly positioned for mobile
+            if (!navMenu.classList.contains('active')) {
+                navMenu.style.left = '-100%';
+            }
         }
     }
 
