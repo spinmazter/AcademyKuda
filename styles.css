@@ -2213,6 +2213,14 @@ body {
     transform: translateY(-3px);
 }
 
+/* Custom X icon styling */
+.x-icon {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+}
+
 /* Contact Form Styles */
 .contact-form-wrapper {
     background: #ffffff;

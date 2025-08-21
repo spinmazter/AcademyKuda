@@ -57,8 +57,8 @@ class HeaderFooterManager {
                         <a href="https://www.facebook.com/groups/468275692499194" target="_blank" class="social-link">
   <i class="fab fa-facebook-f"></i>
 </a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/spin.masterz" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Spinmaster37500" class="social-link" target="_blank" rel="noopener noreferrer"><span class="x-icon">𝕏</span></a>
                         <a href="https://www.youtube.com/@kudamhurure" class="social-link" target="_blank" rel="noopener noreferrer">
   <i class="fab fa-youtube"></i>
 </a>
