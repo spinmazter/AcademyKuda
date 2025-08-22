@@ -125,26 +125,48 @@ class HeaderFooterManager {
 
     // Initialize header and footer
     init() {
-        this.insertHeader();
-        this.insertFooter();
-        this.setupMobileMenu();
-        this.setupDropdowns();
-        this.highlightCurrentPage();
+        try {
+            console.log('HeaderFooterManager initializing...');
+            this.insertHeader();
+            this.insertFooter();
+
+            // Use setTimeout to ensure DOM elements are rendered before setting up functionality
+            setTimeout(() => {
+                this.setupMobileMenu();
+                this.setupDropdowns();
+                this.highlightCurrentPage();
+                console.log('HeaderFooterManager initialized successfully');
+            }, 200);
+        } catch (error) {
+            console.error('HeaderFooterManager initialization failed:', error);
+        }
     }
 
     // Insert header into the page
     insertHeader() {
-        const header = document.querySelector('nav.navbar');
+        const header = document.querySelector('nav.navbar') || document.querySelector('header') || document.querySelector('nav');
+        console.log('Inserting header...', !!header);
         if (header) {
             header.innerHTML = this.headerContent;
+            header.style.display = 'flex';
+            header.style.visibility = 'visible';
+            console.log('Header inserted successfully');
+        } else {
+            console.error('Header element not found');
         }
     }
 
     // Insert footer into the page
     insertFooter() {
-        const footer = document.querySelector('footer.footer');
+        const footer = document.querySelector('footer.footer') || document.querySelector('footer');
+        console.log('Inserting footer...', !!footer);
         if (footer) {
             footer.innerHTML = this.footerContent;
+            footer.style.display = 'block';
+            footer.style.visibility = 'visible';
+            console.log('Footer inserted successfully');
+        } else {
+            console.error('Footer element not found');
         }
     }
 
@@ -228,20 +250,40 @@ class HeaderFooterManager {
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
 
+        console.log('Checking mobile display...', {
+            hamburger: !!hamburger,
+            navMenu: !!navMenu,
+            innerWidth: window.innerWidth,
+            userAgent: navigator.userAgent
+        });
+
         // Check if we're on a mobile device
         const isMobile = window.innerWidth <= 968 ||
                         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
-                        (window.orientation !== undefined);
+                        (window.orientation !== undefined) ||
+                        ('ontouchstart' in window);
+
+        console.log('Is mobile:', isMobile);
 
         if (isMobile && hamburger && navMenu) {
+            console.log('Applying mobile styles...');
             // Force hamburger to show on mobile
             hamburger.style.display = 'block';
             hamburger.style.position = 'relative';
             hamburger.style.zIndex = '1001';
+            hamburger.style.visibility = 'visible';
+            hamburger.style.opacity = '1';
 
             // Ensure nav menu is properly positioned for mobile
             if (!navMenu.classList.contains('active')) {
                 navMenu.style.left = '-100%';
+            }
+
+            // Force navbar to be visible
+            const navbar = document.querySelector('.navbar');
+            if (navbar) {
+                navbar.style.display = 'flex';
+                navbar.style.visibility = 'visible';
             }
         }
     }
@@ -318,7 +360,33 @@ class HeaderFooterManager {
 }
 
 // Initialize HeaderFooterManager when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    const manager = new HeaderFooterManager();
-    manager.init();
-}); 
+function initializeHeaderFooter() {
+    try {
+        console.log('Starting HeaderFooterManager initialization...');
+        const manager = new HeaderFooterManager();
+        manager.init();
+    } catch (error) {
+        console.error('Failed to initialize HeaderFooterManager:', error);
+        // Retry after a delay
+        setTimeout(initializeHeaderFooter, 500);
+    }
+}
+
+// Multiple initialization methods for better mobile compatibility
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeHeaderFooter);
+} else {
+    initializeHeaderFooter();
+}
+
+// Fallback initialization for mobile devices
+window.addEventListener('load', () => {
+    // Check if header/footer were inserted
+    const header = document.querySelector('header');
+    const footer = document.querySelector('footer');
+
+    if (!header || !footer || header.innerHTML.trim() === '' || footer.innerHTML.trim() === '') {
+        console.log('Header/Footer missing, reinitializing...');
+        setTimeout(initializeHeaderFooter, 100);
+    }
+});
