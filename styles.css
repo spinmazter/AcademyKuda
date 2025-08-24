@@ -2492,3 +2492,20 @@ body {
         padding: var(--space-3);
     }
 }
+
+/* Ensure header and footer are always visible */
+header, footer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 1000;
+}
+
+/* On mobile/tablet, force header/footer to show */
+@media screen and (max-width: 968px) {
+    header, footer {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
